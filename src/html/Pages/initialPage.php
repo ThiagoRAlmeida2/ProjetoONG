@@ -1,5 +1,7 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
+<?php
+$titulo = "home";
+include '../Componentes/header.php';
+?>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,9 +10,6 @@
     <title>Página de Pets</title>
 </head>
 <body>
-
-<div id="header-container"></div> <!-- Container para o header -->
-
 <div>
     <h1>Bem-vindo à página de Pets</h1>
 
@@ -25,16 +24,6 @@
     <p id="erroEmail" style="display: none;">Email não autorizado!</p>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        fetch('../../html/Componentes/header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('header-container').innerHTML = data;
-            })
-            .catch(error => console.error('Erro ao carregar o header:', error));
-    });
-</script>
 <script src="../../JavaScript/initialPage.js"></script>
 </body>
 </html>
