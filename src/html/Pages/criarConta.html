@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Conta</title>
+    <script type="module">
+        import { auth } from '../../service/firebase.js';
+        import { createUserWithEmailAndPassword } from 'firebase/auth';
+
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('createAccountBtn').addEventListener('click', function () {
+                const email = prompt("Digite seu email:");
+                const password = prompt("Digite sua senha:");
+
+                if (email && password) {
+                    createUserWithEmailAndPassword(auth, email, password)
+                        .then((userCredential) => {
+                            const user = userCredential.user;
+                            alert(`Conta criada com sucesso! Bem-vindo, ${user.email}!`);
+                        })
+                        .catch((error) => {
+                            console.error('Erro ao criar conta:', error.message);
+                            alert('Erro ao criar conta: ' + error.message);
+                        });
+                } else {
+                    alert('Por favor, insira um email e senha válidos.');
+                }
+            });
+        });
+    </script>
+</head>
+<body>
+<h1>Criar Conta</h1>
+<form id="createAccountForm">
+    <label for="email">Email:</label>
+    <input type="email" id="email" required><br><br>
+    <label for="password">Senha:</label>
+    <input type="password" id="password" required><br><br>
+    <button type="button" id="createAccountBtn">Criar Conta</button>
+</form>
+</body>
+</html>
