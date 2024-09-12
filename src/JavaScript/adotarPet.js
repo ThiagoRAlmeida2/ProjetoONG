@@ -1,4 +1,4 @@
-const authorizedEmail = ''; // email da ong. só para testar
+const authorizedEmail = 'recomecosprojeto@gmail.com';
 let emailVerificado = false;
 
 function verificarEmail() {

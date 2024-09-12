@@ -2,7 +2,7 @@
   "name": "ProjetoONG",
   "version": "1.0.0",
   "description": "",
-  "main": "src/JavaScript/initialPage.js",
+  "main": "src/JavaScript/adotarPet.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

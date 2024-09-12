@@ -1,19 +1,19 @@
 import { initializeApp } from "firebase/app";
-import { getAnalytics } from "firebase/analytics";
-import { getAuth } from "firebase/auth";
+import { getAuth} from 'firebase/auth';
+import { getFirestore } from "firebase/firestore";
 
+// Configuração do Firebase
 const firebaseConfig = {
-    apiKey: "AIzaSyDGUxzXkSZSVMKhvlJZIOo1iFRMrajOBCQ",
-    authDomain: "projetoong-2a807.firebaseapp.com",
-    projectId: "projetoong-2a807",
-    storageBucket: "projetoong-2a807.appspot.com",
-    messagingSenderId: "38027928310",
-    appId: "1:38027928310:web:be14a430fb45f61da982d7",
-    measurementId: "G-BVZQHY9312"
+    apiKey: "AIzaSyAZFfWi-01PgAZuNj5KOZTMOo2mTO6ot9s",
+    authDomain: "projeto-recomecos.firebaseapp.com",
+    projectId: "projeto-recomecos",
+    storageBucket: "projeto-recomecos.appspot.com",
+    messagingSenderId: "1000020937824",
+    appId: "1:1000020937824:web:da0e9506467564ca50c705",
+    measurementId: "G-LMPLJNP6WV"
 };
 
+// Inicializa Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
-const auth = getAuth(app);
-
-export { auth };
+export const auth = getAuth(app);
+export const db = getFirestore(app);
