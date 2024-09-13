@@ -10,6 +10,7 @@ include '../Componentes/header.php';
     <title>Página de Pets</title>
 </head>
 <body>
+    <a>oiiiiii</a>
 </body>
 
 <?php
