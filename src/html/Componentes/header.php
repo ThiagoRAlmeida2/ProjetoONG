@@ -22,12 +22,6 @@
                 <button class="btn contact-btn" onclick="scrollToFooter()">
                     <i class="fas fa-address-book"></i> Contatos
                 </button>
-                <button class="btn logout-btn" onclick="confirmLogout()">
-                    <i class="fas fa-sign-out-alt"></i> Logout
-                </button>
-                <button class="btn signin-btn" onclick="signIn()">
-                    <i class="fas fa-sign-in-alt"></i> Login
-                </button>
             </div>
         </div>
     </div>
@@ -36,20 +30,6 @@
 <script>
     function adoptPets() {
         window.location.href = '../Pages/adotarPet.php';
-    }
-
-    function confirmLogout() {
-        if (confirm("Tem certeza que deseja sair?")) {
-            logout();
-        }
-    }
-
-    function logout() {
-        window.location.href = '../../html/Pages/initialPage.php';
-    }
-
-    function signIn() {
-        window.location.href = '../../html/Pages/login.html';
     }
 
     function scrollToFooter() {
