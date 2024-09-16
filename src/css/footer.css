@@ -1,0 +1,29 @@
+footer {
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+}
+
+.footerSection {
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+
+    padding: 0 12px;
+    width: 30%;
+}
+
+.container {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
