@@ -9,11 +9,10 @@ $titulo = "Doe recursos para nossos pets";
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="/css/header.css">
-        <link rel="stylesheet" href="/css/style.css">
-        <link rel="stylesheet" href="/css/footer.css">
+        <link rel="stylesheet" href="../../Css/header.css">
+        <link rel="stylesheet" href="../../Css/style.css">
+        <link rel="stylesheet" href="../../Css/footer.css">
     </head>
-
     <body>
 
         <?php include '../Componentes/header.php'; ?>
@@ -27,5 +26,5 @@ $titulo = "Doe recursos para nossos pets";
 
     </body>
 
-    <script src="/JavaScript/index.js"></script>
+    <script src="../../JavaScript/index.js"></script>
 </html>
