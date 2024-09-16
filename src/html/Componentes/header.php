@@ -1,40 +1,15 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto Recomeços</title>
-    <link rel="stylesheet" href="../../Css/header.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-</head>
-<body>
 <header>
-    <div class="toolbar">
-        <div class="toolbar-header">
-            <div class="menu-header"></div>
-            <div class="toolbar-title">
-                <i class="fas fa-project-diagram"></i> Projeto Recomeços
-            </div>
-            <div class="toolbar-actions">
-                <button class="btn adopt-btn" onclick="adoptPets()">
-                    <i class="fas fa-paw"></i> Adotar Pets
-                </button>
-                <button class="btn contact-btn" onclick="scrollToFooter()">
-                    <i class="fas fa-address-book"></i> Contatos
-                </button>
-            </div>
-        </div>
+    <div>
+        <a href="/html/Pages/home.php">Projeto Recomeços</a>
     </div>
+
+    <nav class="navBar">
+        <ul class="navBarList">
+            <a href="/html/pages/doe.php"><li>Realizar uma doação</li></a>
+            <a href="/html/pages/adote.php"><li>Adotar Pet</li></a>
+            <a href="/html/pages/apadrinhe.php"><li>Apadrinhe</li></a>
+            <a href="/html/pages/resgates.php"><li>Resgates</li></a>
+            <a href="/html/pages/quemSomos.php"><li>Quem somos</li></a>
+        </ul>
+    </nav>
 </header>
-
-<script>
-    function adoptPets() {
-        window.location.href = '../Pages/adotarPet.php';
-    }
-
-    function scrollToFooter() {
-        document.getElementById("footer").scrollIntoView({ behavior: "smooth" });
-    }
-</script>
-</body>
-</html>
