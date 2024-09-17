@@ -8,7 +8,9 @@
   },
   "private": true,
   "dependencies": {
-    "firebase": "^10.13.1"
+    "firebase": "^10.13.1",
+    "router": "^1.3.8",
+    "routerjs": "^2.4.5"
   },
   "devDependencies": {
     "@babel/cli": "^7.25.6",
