@@ -1,74 +1,38 @@
 footer {
-    background-image: url('https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg');
-    background-size: cover;
-    color: #fff;
-    padding: 20px 0;
-    font-family: Arial, sans-serif;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    z-index: 1000;
-}
+    border-style: solid;
+    border-width: 2px;
 
-
-.footer-container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding: 0 20px;
-}
+    flex-direction: column;
 
-.footer-section {
-    flex: 1;
-    margin: 20px;
-    min-width: 250px;
-}
-
-.footer-section h2 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-.footer-section p {
-    line-height: 1.6;
-    color: #fff;
-}
-
-.footer-section ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-section ul li {
-    margin-bottom: 10px;
-}
-
-
-.footer-section ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-
-.footer-section ul li a:hover {
-    color: #09a8cc;
-    text-decoration: underline;
-}
-
-.footer-bottom {
-    text-align: center;
+    align-items: center;
     padding: 20px 0;
-    color: #fff;
+    width: 100%;
+    bottom: 0;
 }
 
-.footer-bottom p {
-    margin: 0;
-    font-size: 14px;
+.container {
+    width: 70%;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: blue;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
-body {
-    margin: 0;
-    padding-bottom: 100px;
-    box-sizing: border-box;
+.footerSection {
+    width: 40%;
+
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+
+    padding: 0 12px;
+}
+
+.footerBottom {
+    text-align: center;
 }

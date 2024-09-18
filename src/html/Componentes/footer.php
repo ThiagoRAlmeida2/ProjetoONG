@@ -1,31 +1,29 @@
 <footer>
     <div class="container">
         <section class="footerSection">
-        <h2>Sobre Nós</h2>
-        <p>Somos um petshop dedicado ao cuidado e bem-estar dos seus animais. 
-        Oferecemos os melhores produtos e serviços para manter seu pet saudável e feliz.</p>
+        <h2>Projeto recomeços</h2>
         </section>
 
         <section class="footerSection">
-            <h2>Links Rápidos</h2>
+            <h2>Menu</h2>
                 <ul>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Produtos</a></li>
-                    <li><a href="#">Adote um Pet</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Adote um pet</a></li>
+                    <li><a href="#">Apadrinhe</a></li>
+                    <li><a href="#">Realizar uma doação</a></li>
+                </ul>
+
+                <ul>
+                    <li><a href="#">Realizar uma doação</a></li>
+                    <li><a href="#">Resgates</a></li>
+                    <li><a href="#">Quem somos</a></li>
                     <li><a href="#">Contato</a></li>
                 </ul>
         </section>
-
-        <section class="footerSection">
-            <h2>Contate-nos</h2>
-                <p>Email: recomecosprojeto@gmail.com</p>
-                <p>Telefone: (11) 1234-5678</p>
-                <p>Endereço: Rua dos Animais, 123, Cidade Pet, SP</p>
-        </section>
     </div>
 
-    <div class="footer-bottom">
-        <p>&copy; 2024 Projeto Recomeços | Desenvolvido por Pet Lovers</p>
+    <div class="footerBottom">
+        <p>&copy; 2024 Projeto Recomeços</p>
     </div>
 </footer>
 
