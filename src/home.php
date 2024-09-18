@@ -1,6 +1,7 @@
 <?php
 $titulo = "Projeto Recomeços";
-include 'Componentes/header.php'; ?>
+include 'Componentes/header.php'; 
+?>
 
 
 <main>
@@ -10,5 +11,4 @@ include 'Componentes/header.php'; ?>
     </div>
 </main>
 <?php include 'Componentes/footer.php'; ?>
-    <script src="/JavaScript/index.js"></script>
-</html>
+<script src="/JavaScript/index.js"></script>

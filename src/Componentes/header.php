@@ -16,19 +16,19 @@
                     <i class="fas fa-project-diagram"></i> Projeto Recomeços
                 </div>
                 <div class="toolbar-actions">
-                    <button class="btn-adotar">
+                    <button class="btn-adotar" onclick="adotarPet()">
                         <i class="fas fa-paw"></i> Adotar Pet
                     </button>
 
-                    <button class="btn-apadrinhe">
+                    <button class="btn-apadrinhe" onclick="apadrinhe()">
                         <i class="fas fa-hand-holding-heart"></i> Apadrinhe
                     </button>
 
-                    <button class="btn-doacao">
+                    <button class="btn-doacao" onclick="adocao()">
                         <i class="fas fa-donate"></i> Doação
                     </button>
 
-                    <button class="btn-quem-somos">
+                    <button class="btn-quem-somos" onclick="quemSomos()">
                     <i class="fas fa-users"></i> Quem Somos
                     </button>
                 </div>  
@@ -38,6 +38,9 @@
 </header>
 
 <script>
+    function adotarPet(){
+        window.location.href ="../src/adotarPet.php";
+    }
 </script>
 </body>
 </html>
