@@ -1,12 +1,15 @@
+/* Reset básico */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
 
+/* Header */
 header {
     width: 100%;
 }
 
+/* Toolbar */
 .toolbar {
     position: relative;
     background-image: url('https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg');
@@ -19,10 +22,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-}
-
-.menu-header {
-    /* Placeholder for menu header, adjust as needed */
 }
 
 .toolbar-title {
@@ -41,6 +40,7 @@ header {
     align-items: center;
 }
 
+/* Botões na Toolbar */
 .btn {
     background: none;
     border: none;
@@ -55,4 +55,52 @@ header {
 
 .logout-btn i {
     margin-right: 8px;
+}
+
+/* Menu Header */
+.menu-header {
+    background-color: #343a40;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.menu-header a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    margin: 0 15px;
+    transition: color 0.3s ease;
+}
+
+.menu-header a:hover {
+    color: #007bff;
+}
+
+.menu-header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.menu-header .menu-items {
+    display: flex;
+    gap: 20px;
+}
+
+/* Botão no Menu Header */
+.menu-header .menu-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.menu-header .menu-button:hover {
+    background-color: #0056b3;
 }
