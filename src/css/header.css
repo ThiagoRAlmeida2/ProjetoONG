@@ -59,3 +59,35 @@ header {
     font-size: 16px;
     cursor: pointer;
 }
+.btn-adotar:hover{
+    color:#007bff;
+}
+.btn-apadrinhe:hover{
+    color:#007bff;
+}
+.btn-doacao:hover{
+    color:#007bff;
+}
+.btn-quem-somos:hover{
+    color:#007bff;
+}
+
+.btn-home {
+    background: none; /* Remove o fundo padrão do botão */
+    border: none; /* Remove a borda do botão */
+    color: white; /* Cor do texto e ícone */
+    font-size: 24px; /* Tamanho da fonte, para parecer um título */
+    display: flex; /* Para alinhar o ícone e o texto */
+    align-items: center; /* Centraliza verticalmente o ícone e o texto */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    font-weight: bold; /* Deixa o texto mais destacado */
+}
+
+.btn-home i {
+    margin-right: 8px; /* Espaço entre o ícone e o texto */
+    font-size: 28px; /* Tamanho do ícone */
+}
+
+.btn-home:hover {
+    color: #007bff; /* Muda a cor do texto e ícone ao passar o mouse */
+}

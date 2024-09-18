@@ -13,8 +13,9 @@
         <div class="toolbar-header">
             <div class="menu-header"></div>
                 <div class="toolbar-title">
-                    <i class="fas fa-project-diagram"></i> Projeto Recomeços
-                </div>
+                    <button class="btn-home" onclick="home()">
+                        <i class="fas fa-project-diagram"></i> Projeto Recomeços
+                    </div>
                 <div class="toolbar-actions">
                     <button class="btn-adotar" onclick="adotarPet()">
                         <i class="fas fa-paw"></i> Adotar Pet
@@ -24,7 +25,7 @@
                         <i class="fas fa-hand-holding-heart"></i> Apadrinhe
                     </button>
 
-                    <button class="btn-doacao" onclick="adocao()">
+                    <button class="btn-doacao" onclick="doacao()">
                         <i class="fas fa-donate"></i> Doação
                     </button>
 
@@ -38,8 +39,20 @@
 </header>
 
 <script>
+    function home(){
+        window.location.href="home.php";
+    }
     function adotarPet(){
-        window.location.href ="../src/adotarPet.php";
+        window.location.href="adotarPet.php";
+    }
+    function apadrinhe(){
+        window.location.href="apadrinhe.php";
+    }
+    function doacao(){
+        window.location.href="doe.php";
+    }
+    function quemSomos(){
+        window.location.href="quemSomos.php";
     }
 </script>
 </body>
