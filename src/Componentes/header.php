@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto recomeços</title>
-    <link rel="stylesheet" href="css/hooter.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
 <header>
@@ -17,23 +17,19 @@
                 </div>
                 <div class="toolbar-actions">
                     <button class="btn-adotar">
-                        <img src="path/to/adotarPetIcon.png" alt="Adotar Pet" />
-                        Adotar Pet
+                        <i class="fas fa-paw"></i> Adotar Pet
                     </button>
 
                     <button class="btn-apadrinhe">
-                        <img src="path/to/apadrinheIcon.png" alt="Apadrinhe" />
-                        Apadrinhe
+                        <i class="fas fa-hand-holding-heart"></i> Apadrinhe
                     </button>
 
                     <button class="btn-doacao">
-                        <img src="path/to/doacaoIcon.png" alt="Doação" />
-                        Doação
+                        <i class="fas fa-donate"></i> Doação
                     </button>
 
                     <button class="btn-quem-somos">
-                        <img src="path/to/quemSomosIcon.png" alt="Quem Somos" />
-                        Quem Somos
+                    <i class="fas fa-users"></i> Quem Somos
                     </button>
                 </div>  
             </div>
