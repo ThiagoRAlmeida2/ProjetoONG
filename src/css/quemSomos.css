@@ -1,8 +1,6 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #faf3e0;
-    margin: 0;
-    padding: 20px;
 }
 
 h1 {
@@ -13,9 +11,9 @@ h1 {
 /* Grid para os membros da equipe com limite de 3 fotos por linha */
 .team-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
     gap: 20px;
-    max-width: 1000px;
+    max-width: 1200px; /* Define uma largura máxima */
     margin: 0 auto;
     padding: 20px;
 }
