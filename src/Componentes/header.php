@@ -43,7 +43,7 @@
         window.location.href="home.php";
     }
     function adotarPet(){
-        window.location.href="adotarPet.php";
+        window.location.href="adote.php";
     }
     function apadrinhe(){
         window.location.href="apadrinhe.php";
