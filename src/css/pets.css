@@ -1,0 +1,56 @@
+main {
+    width: 100%;
+}
+
+.conteiner {
+    text-align: center;
+    padding: 200px 20px;
+    display: block;
+    flex-direction: row;
+}
+
+#bemVindo {
+    background-color: #774C3E;
+    color: #FFF;
+}
+
+#bemVindo p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+#bemVindo h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.filtros {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.filtros h3 {
+    font-weight: 600;
+}
+
+.filtros ul {
+    margin: 15px 0;
+}
+
+.filtros ul li label {
+    font-weight: 400;
+}
+
+div button {
+    background-color: #774C3E;
+    color: white;
+
+    font-size: 15px;
+    border-radius: 20px;
+    border: none;
+
+    width: 150px;
+    height: 35px;
+    margin-bottom: 10px;
+}
