@@ -15,11 +15,11 @@
                     <h2>Projeto Recomeços</h2>
 
                     <a href="https://www.facebook.com" target="_blank">
-                        <img src="./assets/images/icon facebook.png" alt="ícone do facebook.">
+                        <img src="./assets/images/icon facebook.svg" alt="ícone do facebook.">
                     </a>
 
                     <a href="https://www.instagram.com" target="_blank">
-                        <img src="./assets/images/icon instagram.png" alt="ícone do instagram.">
+                        <img src="./assets/images/icon instagram.svg" alt="ícone do instagram.">
                     </a>
                 </div>
 
