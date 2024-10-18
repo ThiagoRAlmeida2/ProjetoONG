@@ -15,7 +15,7 @@
     <body>    
 
         <header>
-            <a href="../home.php">
+            <a href="../src/home.php">
                 <h2>Projeto Recomeços</h2>
             </a>
 

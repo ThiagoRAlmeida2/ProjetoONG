@@ -30,17 +30,17 @@
 
                     <div>
                         <ul>
-                            <a href="../pets.php">
+                            <a href="../src/pets.php">
                                 <li>Conheça os Pets</li>
                             </a>
 
-                            <a href="../quemSomos.php">
+                            <a href="../src/quemSomos.php">
                                 <li>Quem somos</li>
                             </a>
                         </ul>
 
                         <ul>
-                            <a href="../doar.php">
+                            <a href="../src/doar.php">
                                 <li>Doar</li>                            
                             </a>
                         </ul>
