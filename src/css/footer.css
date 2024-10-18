@@ -6,8 +6,9 @@ footer {
     justify-items: center;
     justify-content: center;
 
-    padding: 100px 0;
+    padding: 160px 0 120px 0;
     margin: 0;
+
     top: 100%;
     bottom: 0;
     width: 100%;
@@ -17,85 +18,90 @@ footer section {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 150px;
 }
 
-footer section div {
-    width: 250px;
-    padding: 0;
+/* SEÇÃO DE INFORMAÇÕES NO FOOTER */
+.footer-info div {
+    width: fit-content;
 }
 
-footer section div:last-child {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-footer section div h2 {
+.footer-info h2 {
     padding: 0;
     margin-bottom: 15px;
 
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
 }
 
-footer section div div ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-
-    list-style: none;
-    margin-right: 10px;
-    width: 40%;
-}
-
-footer section div ul li {
-    display: flex;
-}
-
-footer section div ul li:hover {
-    opacity: 0.8;
-}
-
-footer section div p, footer section div li {
-    color: #fff;
-
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.6;
-
-    cursor: pointer;
-}
-
-footer section div img {
+/* DIV DE REDES SOCIAIS NO FOOTER */
+.footer-social img {
     width: 30px;
     margin-right: 10px;
     cursor: pointer;
 }
 
-footer section div img:hover {
-    opacity: 0.8;
+.footer-social img:hover {
+    filter: brightness(0.75);
+    transition: 0.15s;
+    transform: scale(0.95);
 }
 
-footer hr {
+/* DIV DE MENU NO FOOTER */
+.footer-menu div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.footer-menu div ul {
+    list-style: none;
+}
+
+.footer-menu div ul li {
+    color: #fff;
+
+    width:fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 6px;
+
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+
+    cursor: pointer;
+}
+
+.footer-menu div ul li:hover {
+    filter: brightness(0.75);
+    transition: 0.15s;
+    transform: scale(1.05);
+}
+
+/* LINHA DIVISÓRIA ENTRE OS LINKS E O COPY */
+.footer-line {
     border: none;
     border-top: 1px solid #fff;
 
     display: flex;
     flex-direction: column;
 
-    width: 70%;
-    margin: 50px auto 30px auto;
+    width: 50%;
+    margin: 65px auto 40px auto;
 }
 
-footer section:last-child {
+/* SEÇÃO DE DIREITOS AUTORAIS */
+.footer-copy {
     color: #fff;
 
     text-align: center;
     padding: 20px 0;
 }
 
-footer section:last-child p {
-    margin: 0;
-    font-size: 14px;
+.footer-copy p {
+    font-size: 17px;
+    font-weight: 300;
 }
 

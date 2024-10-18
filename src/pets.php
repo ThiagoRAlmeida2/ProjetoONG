@@ -14,21 +14,8 @@
     </head>
 
     <body>
-        <header>
-            <h2 onclick="home()">Projeto Recomeços</h2>
-                
-            <nav class="toolbar-actions">
-                <ul>
-                    <li onclick="pets()">Conheça os Pets</li>
 
-                    <li onclick="doacao()">Doações</li>
-
-                    <li onclick="quemSomos()">Quem somos</li>
-
-                    <li onclick="contatos()"> Contato</li>
-                </ul>
-            </nav>    
-        </header>
+    <?php include 'Componentes/header.php'; ?>
         
         <main>
             <div class="conteiner" id="bemVindo">

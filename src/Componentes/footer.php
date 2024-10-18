@@ -10,36 +10,51 @@
 
     <body>
         <footer>
-            <section>
-                <div>
+            <section class="footer-info">
+                <div class="footer-social">
                     <h2>Projeto Recomeços</h2>
 
-                    <img src="./assets/images/icon facebook.png" alt="ícone do facebook.">
-                    <img src="./assets/images/icon instagram.png" alt="ícone do instagram.">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="./assets/images/icon facebook.png" alt="ícone do facebook.">
+                    </a>
+
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="./assets/images/icon instagram.png" alt="ícone do instagram.">
+                    </a>
                 </div>
 
-                <div>
-                    <h2>Menu</h2>
+                <div class="footer-menu">
+                    <div>
+                        <h2>Menu</h2>
+                    </div>
 
                     <div>
                         <ul>
-                            <li onclick="pets()">Conheça os Pets</li>
+                            <a href="../pets.php">
+                                <li>Conheça os Pets</li>
+                            </a>
 
-                            <li onclick="quemSomos()">Quem somos</li>
+                            <a href="../quemSomos.php">
+                                <li>Quem somos</li>
+                            </a>
                         </ul>
 
                         <ul>
-                            <li onclick="doacao()">Doações</li>
+                            <a href="../doar.php">
+                                <li>Doar</li>                            
+                            </a>
 
-                            <li onclick="contatos()"> Contato</li>
+                            <a href="../contato.php">
+                                <li> Contato</li>
+                            </a>
                         </ul>
                     </div>
                 </div>
             </section>
 
-            <hr>
+            <hr class="footer-line">
 
-            <section>
+            <section class="footer-copy">
                 <p>&copy; 2024 Projeto Recomeços | Desenvolvido por Pet Lovers</p>
             </section>
         </footer>
