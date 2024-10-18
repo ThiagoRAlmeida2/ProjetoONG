@@ -2,7 +2,11 @@ footer {
     background-color: #48302E;
     color: #fff;
 
-    padding: 20px 0;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+
+    padding: 100px 0;
     margin: 0;
     top: 100%;
     bottom: 0;
@@ -11,27 +15,45 @@ footer {
 
 footer section {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 0 20px;
+    gap: 20px;
 }
 
 footer section div {
-    border: red solid 5px;
-    justify-content: space-evenly;
-    flex: 1;
-    margin: 20px;
-    min-width: 250px;
+    width: 250px;
+    padding: 0;
 }
 
-footer section div img {
-  width: 25px;
+footer section div:last-child {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 footer section div h2 {
+    padding: 0;
     margin-bottom: 15px;
+
     font-size: 20px;
     font-weight: 600;
+}
+
+footer section div div ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    list-style: none;
+    margin-right: 10px;
+    width: 40%;
+}
+
+footer section div ul li {
+    display: flex;
+}
+
+footer section div ul li:hover {
+    opacity: 0.8;
 }
 
 footer section div p, footer section div li {
@@ -40,38 +62,39 @@ footer section div p, footer section div li {
     font-size: 15px;
     font-weight: 400;
     line-height: 1.6;
-}
 
-footer section div ul {
-    list-style: none;
-    padding: 0;
-}
-
-footer section div ul li {
     cursor: pointer;
-    margin-bottom: 8px;
 }
 
-
-footer section div ul li a {
-    color: #fff;
-
-    text-decoration: none;
+footer section div img {
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
-
-footer section div ul li a:hover {
+footer section div img:hover {
     opacity: 0.8;
 }
 
-#bottom section {
+footer hr {
+    border: none;
+    border-top: 1px solid #fff;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 70%;
+    margin: 50px auto 30px auto;
+}
+
+footer section:last-child {
     color: #fff;
 
     text-align: center;
     padding: 20px 0;
 }
 
-#bottom section p {
+footer section:last-child p {
     margin: 0;
     font-size: 14px;
 }

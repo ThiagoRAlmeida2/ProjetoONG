@@ -21,16 +21,25 @@
                 <div>
                     <h2>Menu</h2>
 
-                    <ul>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Produtos</a></li>
-                        <li><a href="#">Adote um Pet</a></li>
-                        <li><a href="#">Contato</a></li>
-                    </ul>
+                    <div>
+                        <ul>
+                            <li onclick="pets()">Conheça os Pets</li>
+
+                            <li onclick="quemSomos()">Quem somos</li>
+                        </ul>
+
+                        <ul>
+                            <li onclick="doacao()">Doações</li>
+
+                            <li onclick="contatos()"> Contato</li>
+                        </ul>
+                    </div>
                 </div>
             </section>
 
-            <section id="bottom">
+            <hr>
+
+            <section>
                 <p>&copy; 2024 Projeto Recomeços | Desenvolvido por Pet Lovers</p>
             </section>
         </footer>
