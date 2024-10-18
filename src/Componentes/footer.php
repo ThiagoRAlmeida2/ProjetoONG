@@ -4,8 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="/css/footer.css">
-        <link rel="stylesheet" href="/css/resets.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/resets.css">
     </head>
 
     <body>
@@ -42,10 +42,6 @@
                         <ul>
                             <a href="../doar.php">
                                 <li>Doar</li>                            
-                            </a>
-
-                            <a href="../contato.php">
-                                <li> Contato</li>
                             </a>
                         </ul>
                     </div>

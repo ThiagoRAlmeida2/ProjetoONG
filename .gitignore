@@ -5,3 +5,10 @@ package-lock.json
 
 PHPhost.md
 paletaDeCores.md
+
+
+# Default ignored files
+/shelf/
+/workspace.xml
+# Editor-based HTTP Client requests
+/httpRequests/
