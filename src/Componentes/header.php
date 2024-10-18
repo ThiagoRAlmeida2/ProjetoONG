@@ -15,29 +15,29 @@
     <body>    
 
         <header>
-            <a href="../home.php">
+            <a href="/home.php">
                 <h2>Projeto Recomeços</h2>
             </a>
-                
+
             <nav class="toolbar-actions">
                 <ul>
-                    <a href="../pets.php">
+                    <a href="/pets.php">
                         <li>Conheça os Pets</li>
                     </a>
 
-                    <a href="../doar.php">
-                        <li>Doar</li>                            
+                    <a href="/doar.php">
+                        <li>Doar</li>
                     </a>
 
                     <a href="../quemSomos.php">
                         <li>Quem somos</li>
                     </a>
 
-                    <a href="../contato.php">
+                    <a href="/contato.php">
                         <li>Contato</li>
                     </a>
                 </ul>
-            </nav>    
+            </nav>
         </header>
 
     </body>
