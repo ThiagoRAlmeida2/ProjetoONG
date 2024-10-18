@@ -1,93 +1,52 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-}
 
 header {
-    width: 100%;
-}
+    background-color: #F8CC59;
 
-.toolbar {
+    width: 100%;
     position: relative;
-    background-image: url('https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg');
     background-size: cover;
     color: white;
-    padding: 16px;
-}
+    padding: 24px 0;
 
-.toolbar-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.toolbar-title {
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    margin-right: auto;
-}
-
-.toolbar-title i {
-    margin-right: 8px;
-}
-
-.toolbar-actions {
+    justify-content: space-evenly;
     display: flex;
     align-items: center;
 }
 
-.toolbar-actions button {
-    display: flex;
-    align-items: center;
-    gap: 8px; /* Espaço entre o ícone e o texto */
-    background-color: transparent;
-    border: none;
-    color: white;
-    font-size: 16px;
+header h2 {
+    color: #774C3E;
+    
+    font-weight: 600;
+    font-size: 22px;
     cursor: pointer;
 }
 
-.toolbar-actions i {
-    font-size: 18px; /* Tamanho do ícone */
+header h2:hover {
+    transform:scale(1.05);
+    transition: 0.25s;
+    opacity: 0.8;
 }
 
-.btn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 16px;
+nav {
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav ul li {
+    color: #774C3E;
+
+    font-weight: 400;
+    text-decoration: none;
     cursor: pointer;
 }
-.btn-adotar:hover{
-    color:#007bff;
-}
-.btn-apadrinhe:hover{
-    color:#007bff;
-}
-.btn-doacao:hover{
-    color:#007bff;
-}
-.btn-quem-somos:hover{
-    color:#007bff;
-}
 
-.btn-home {
-    background: none; /* Remove o fundo padrão do botão */
-    border: none; /* Remove a borda do botão */
-    color: white; /* Cor do texto e ícone */
-    font-size: 24px; /* Tamanho da fonte, para parecer um título */
-    display: flex; /* Para alinhar o ícone e o texto */
-    align-items: center; /* Centraliza verticalmente o ícone e o texto */
-    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
-    font-weight: bold; /* Deixa o texto mais destacado */
-}
-
-.btn-home i {
-    margin-right: 8px; /* Espaço entre o ícone e o texto */
-    font-size: 28px; /* Tamanho do ícone */
-}
-
-.btn-home:hover {
-    color: #007bff; /* Muda a cor do texto e ícone ao passar o mouse */
+nav ul li:hover {
+    transform:scale(1.05);
+    transition: 0.15s;
+    opacity: 0.8;
 }
