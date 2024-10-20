@@ -4,8 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="/css/header.css">
-        <link rel="stylesheet" href="/css/resets.css">
+        <link rel="stylesheet" href="/css/style.css">
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,7 +17,7 @@
             <a href="../home.php">
                 <h2>Projeto Recomeços</h2>
             </a>
-                
+            
             <nav class="toolbar-actions">
                 <ul>
                     <a href="../pets.php">
@@ -39,6 +38,3 @@
                 </ul>
             </nav>    
         </header>
-
-    </body>
-</html>

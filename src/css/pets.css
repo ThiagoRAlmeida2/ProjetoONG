@@ -2,29 +2,39 @@ main {
     width: 100%;
 }
 
-.conteiner {
+.bemVindo {
+    background-color: #774C3E;
+    color: #FFF;
+
     text-align: center;
     padding: 200px 20px;
     display: block;
     flex-direction: row;
 }
 
-#bemVindo {
-    background-color: #774C3E;
-    color: #FFF;
-}
-
-#bemVindo p {
+.bemVindo p {
     font-size: 22px;
     font-weight: 400;
 }
 
-#bemVindo h1 {
+.bemVindo h1 {
     font-size: 40px;
     font-weight: 600;
 }
 
+.catalogo-pets {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+}
+
 .filtros {
+    border: red solid 1px;
+
+    width: fit-content;
+    gap: 20px;
+
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -32,10 +42,13 @@ main {
 
 .filtros h3 {
     font-weight: 600;
+    padding-bottom: 6px;
 }
 
 .filtros ul {
-    margin: 15px 0;
+    border: blue solid 1px;
+    
+    list-style: none;
 }
 
 .filtros ul li label {
@@ -46,11 +59,42 @@ div button {
     background-color: #774C3E;
     color: white;
 
-    font-size: 15px;
+    font-size: 17px;
     border-radius: 20px;
     border: none;
 
     width: 150px;
-    height: 35px;
+    height: 45px;
     margin-bottom: 10px;
+}
+
+.section-pets {
+    border: green solid 2px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: fit-content;
+    margin: 100px auto;
+    gap: 10px;
+}
+
+.div-pets {
+    border: red solid 1px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: fit-content;
+    grid-column: 3;
+    gap: 20px;
+}
+
+.pet-card {
+    background-color: #774C3E;
+
+    width: 250px;
+    height: 320px;
+    border-radius: 15px;
 }

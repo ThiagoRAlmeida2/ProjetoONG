@@ -1,14 +1,4 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="/css/footer.css">
-        <link rel="stylesheet" href="/css/resets.css">
-    </head>
-
-    <body>
         <footer>
             <section class="footer-info">
                 <div class="footer-social">
@@ -18,7 +8,7 @@
                         <img src="./assets/images/icon facebook.svg" alt="ícone do facebook.">
                     </a>
 
-                    <a href="https://www.instagram.com" target="_blank">
+                    <a href="https://www.instagram.com/projetorecomecos" target="_blank">
                         <img src="./assets/images/icon instagram.svg" alt="ícone do instagram.">
                     </a>
                 </div>
@@ -58,5 +48,6 @@
                 <p>&copy; 2024 Projeto Recomeços | Desenvolvido por Pet Lovers</p>
             </section>
         </footer>
+
     </body>
 </html>
