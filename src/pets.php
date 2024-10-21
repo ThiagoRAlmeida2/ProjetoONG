@@ -15,6 +15,8 @@
 
     <body>
 
+    <title>Conheça os Pets</title>
+
     <?php include 'Componentes/header.php'; ?>
         
         <main>
@@ -89,24 +91,92 @@
                         <li>
                             <input type="radio" name="sexo" id="sexo">
                             <label for="">Macho</label>
-                            
                         </li>
                     </ul>
 
-                    <div>
-                        <button type="reset">Limpar</button> <br>
-                        <button type="get">Aplicar</button>
-                    </div>
+                    <hr>
                     </form>
                 </div>
                     
                 <div class="div-pets">
-                    <div class="pet-card"></div>
-                    <div class="pet-card"></div>
-                    <div class="pet-card"></div>
-                    <div class="pet-card"></div>
+                    <div class="pet-card">
+                        <img src="./assets/images/odin.jpg" alt="odin">
+
+                        <div class="pet-about">
+                            <h3>Odin</h3>
+                            <p>Castrado</p>
+                            <p>Macho</p>
+                        </div>                        
+                    </div>
+
+                    <div class="pet-card">
+                        <img src="./assets/images/odin.jpg" alt="odin">
+
+                        <div class="pet-about">
+                            <h3>Odin</h3>
+                            <p>Castrado</p>
+                            <p>Macho</p>
+                        </div>                        
+                    </div>
+
+                    <div class="pet-card">
+                        <img src="./assets/images/odin.jpg" alt="odin">
+
+                        <div class="pet-about">
+                            <h3>Odin</h3>
+                            
+                            <p>Castrado</p>
+                            <p>Macho</p>
+                        </div>      
+                    </div>
+
+                    <div class="pet-card">
+                        <img src="./assets/images/odin.jpg" alt="odin">
+
+                        <div class="pet-about">
+                            <h3>Odin</h3>
+
+                            <p>Castrado</p>
+                            <p>Macho</p>
+                        </div>                        
+                    </div>
+
+                    <div class="pet-card">
+                        <img src="./assets/images/odin.jpg" alt="odin">
+
+                        <div class="pet-about">
+                            <h3>Odin</h3>
+
+                            <p>Castrado</p>
+                            <p>Macho</p>
+                        </div>      
+                    </div>
+
+                    <div class="pet-card">
+                        <img src="./assets/images/odin.jpg" alt="odin">
+
+                        <div class="pet-about">
+                            <h3>Odin</h3>
+
+                            <p>Castrado</p>
+                            <p>Macho</p>
+                        </div>                        
+                    </div>
+
+                    <div class="pet-card">
+                        <img src="./assets/images/odin.jpg" alt="odin">
+
+                        <div class="pet-about">
+                            <h3>Odin</h3>
+
+                            <p>Castrado</p>
+                            <p>Macho</p>
+                        </div>      
+                    </div>
                 </div>
             </section>
+
+            <hr class="pets-line">
 
         </main>
 

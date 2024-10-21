@@ -1,5 +1,9 @@
 main {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 
 .bemVindo {
@@ -7,9 +11,12 @@ main {
     color: #FFF;
 
     text-align: center;
-    padding: 200px 20px;
-    display: block;
-    flex-direction: row;
+    padding: 200px 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 }
 
 .bemVindo p {
@@ -22,25 +29,32 @@ main {
     font-weight: 600;
 }
 
-.catalogo-pets {
+.section-pets {
+    border: green solid 2px;
+
     display: flex;
     flex-direction: row;
-    text-align: center;
-    justify-content: center;
+    justify-content: space-between;
+
+    width: 60%;
+
+    margin: 100px 0 40px 0;
+    gap: 100px;
 }
 
 .filtros {
     border: red solid 1px;
 
-    width: fit-content;
+    width: max-content;
     gap: 20px;
 
     display: flex;
     flex-direction: column;
-    text-align: center;
+    text-align:justify;
 }
 
 .filtros h3 {
+    font-size: 16px;
     font-weight: 600;
     padding-bottom: 6px;
 }
@@ -49,52 +63,80 @@ main {
     border: blue solid 1px;
     
     list-style: none;
+    gap:8px;
+    display: flex;
+    flex-direction: column;
 }
 
-.filtros ul li label {
+.filtros ul li {
+    font-size: 14px;
     font-weight: 400;
 }
 
-div button {
-    background-color: #774C3E;
-    color: white;
-
-    font-size: 17px;
-    border-radius: 20px;
-    border: none;
-
-    width: 150px;
-    height: 45px;
-    margin-bottom: 10px;
+.filtros ul li, .filtros ul li input, .filtros ul li label {
+    cursor: pointer;
 }
 
-.section-pets {
-    border: green solid 2px;
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: fit-content;
-    margin: 100px auto;
-    gap: 10px;
+.filtros ul li input {
+    border: #774C3E solid 2px;
 }
 
+/* DIV DOS CARDS DE PETS */
 .div-pets {
     border: red solid 1px;
 
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
+    flex-direction: row;
+    text-align: justify;
 
-    width: fit-content;
-    grid-column: 3;
-    gap: 20px;
+    width: max-content;
+
+    gap: 15px;
 }
 
+/* CARD INDIVIDUAL DO PET */
 .pet-card {
-    background-color: #774C3E;
+    border: blue solid 1px;
+    
+    text-align: center;
+    cursor: pointer;
 
-    width: 250px;
-    height: 320px;
-    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 200px;
+    gap: 10px;
+
+    height: fit-content;
+    padding-bottom: 20px;
+}
+
+.pet-card img {
+    width: 100%;
+    bottom: 10px;
+    
+    display: block;
+
+    border-radius: 4px;
+}
+
+.pet-card img:hover {
+    transition: 0.2s;
+    filter: brightness(1.1);
+}
+
+/* .pet-card:hover {
+    transition: 0.3s;
+    transform: scale(0.96);
+} */
+
+.pets-line {
+    border: none;
+    border-top: #010101 solid 1px;
+
+    display: flex;
+    flex-direction: column;
+    
+    width: 55%;
+    margin: 40px auto 40px auto;
 }
