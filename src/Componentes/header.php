@@ -4,8 +4,18 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<<<<<<< HEAD
         <link rel="stylesheet" href="./css/style.css">
         <link rel="icon" type="image/x-icon" href="./assets/images/logo clara projeto recomecos.svg">
+=======
+        <link rel="stylesheet" href="/css/style.css">
+<<<<<<< HEAD
+        <link rel="icon" type="image/x-icon" href="./assets/images/logo clara projeto recomecos.svg">
+=======
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/resets.css">
+>>>>>>> b55189a07968474afa9c120302b340588082ae09
+>>>>>>> d23ce0c018222f95e81b1be002ea435525ff68f7
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +23,10 @@
     </head>
 
     <body>    
+<<<<<<< HEAD
+=======
+
+>>>>>>> d23ce0c018222f95e81b1be002ea435525ff68f7
         <header>
             <a href="../src/home.php">
                 <h2>Projeto Recomeços</h2>
@@ -33,5 +47,11 @@
                 </ul>
             </nav>    
         </header>
+<<<<<<< HEAD
+=======
+            </nav>
+        </header>
+
+>>>>>>> d23ce0c018222f95e81b1be002ea435525ff68f7
     </body>
 </html>
