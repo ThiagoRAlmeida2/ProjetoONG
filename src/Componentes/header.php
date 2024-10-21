@@ -5,7 +5,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <link rel="stylesheet" href="/css/style.css">
+<<<<<<< HEAD
         <link rel="icon" type="image/x-icon" href="./assets/images/logo clara projeto recomecos.svg">
+=======
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/resets.css">
+>>>>>>> b55189a07968474afa9c120302b340588082ae09
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,27 +20,27 @@
     <body>    
 
         <header>
-            <a href="../home.php">
+            <a href="../src/home.php">
                 <h2>Projeto Recomeços</h2>
             </a>
-            
             <nav class="toolbar-actions">
                 <ul>
-                    <a href="../pets.php">
+                    <a href="../src/pets.php">
                         <li>Conheça os Pets</li>
                     </a>
 
-                    <a href="../doar.php">
-                        <li>Doar</li>                            
+                    <a href="../src/doar.php">
+                        <li>Doar</li>
                     </a>
 
-                    <a href="../quemSomos.php">
+                    <a href="../src/quemSomos.php">
                         <li>Quem somos</li>
-                    </a>
-
-                    <a href="../contato.php">
-                        <li>Contato</li>
                     </a>
                 </ul>
             </nav>    
         </header>
+            </nav>
+        </header>
+
+    </body>
+</html>

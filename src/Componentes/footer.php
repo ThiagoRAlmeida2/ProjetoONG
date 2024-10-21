@@ -1,4 +1,8 @@
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/resets.css">
+    </head>
 
+    <body>
         <footer>
             <section class="footer-info">
                 <div class="footer-social">
@@ -20,22 +24,18 @@
 
                     <div>
                         <ul>
-                            <a href="../pets.php">
+                            <a href="../src/pets.php">
                                 <li>Conheça os Pets</li>
                             </a>
 
-                            <a href="../quemSomos.php">
+                            <a href="../src/quemSomos.php">
                                 <li>Quem somos</li>
                             </a>
                         </ul>
 
                         <ul>
-                            <a href="../doar.php">
+                            <a href="../src/doar.php">
                                 <li>Doar</li>                            
-                            </a>
-
-                            <a href="../contato.php">
-                                <li> Contato</li>
                             </a>
                         </ul>
                     </div>
