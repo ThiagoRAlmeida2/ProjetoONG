@@ -1,8 +1,12 @@
-body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+
+/* FORMATAÇÃO DE RESETS */
+@import url('resets.css');
+
+/* ESTILOS DO HEADER */
+@import url('header.css');
+
+/* ESTILOS DO FOOTER */
+@import url('footer.css');
+
+/* ESTILOS DA PÁGINA DE PETS */
+@import url('pets.css');
