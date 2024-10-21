@@ -1,59 +1,57 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto recomeços</title>
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-</head>
-<body>
-<header>
-    <div class="toolbar">
-        <div class="toolbar-header">
-            <div class="menu-header"></div>
-                <div class="toolbar-title">
-                    <button class="btn-home" onclick="home()">
-                        <i class="fas fa-project-diagram"></i> Projeto Recomeços
-                    </div>
-                <div class="toolbar-actions">
-                    <button class="btn-adotar" onclick="adotarPet()">
-                        <i class="fas fa-paw"></i> Adotar Pet
-                    </button>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-                    <button class="btn-apadrinhe" onclick="apadrinhe()">
-                        <i class="fas fa-hand-holding-heart"></i> Apadrinhe
-                    </button>
+<<<<<<< HEAD
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="icon" type="image/x-icon" href="./assets/images/logo clara projeto recomecos.svg">
+=======
+        <link rel="stylesheet" href="/css/style.css">
+<<<<<<< HEAD
+        <link rel="icon" type="image/x-icon" href="./assets/images/logo clara projeto recomecos.svg">
+=======
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/resets.css">
+>>>>>>> b55189a07968474afa9c120302b340588082ae09
+>>>>>>> d23ce0c018222f95e81b1be002ea435525ff68f7
 
-                    <button class="btn-doacao" onclick="doacao()">
-                        <i class="fas fa-donate"></i> Doação
-                    </button>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+    </head>
 
-                    <button class="btn-quem-somos" onclick="quemSomos()">
-                    <i class="fas fa-users"></i> Quem Somos
-                    </button>
-                </div>  
-            </div>
-        </div>
-    </div>
-</header>
+    <body>    
+<<<<<<< HEAD
+=======
 
-<script>
-    function home(){
-        window.location.href="home.php";
-    }
-    function adotarPet(){
-        window.location.href="adotarPet.php";
-    }
-    function apadrinhe(){
-        window.location.href="apadrinhe.php";
-    }
-    function doacao(){
-        window.location.href="doe.php";
-    }
-    function quemSomos(){
-        window.location.href="quemSomos.php";
-    }
-</script>
-</body>
+>>>>>>> d23ce0c018222f95e81b1be002ea435525ff68f7
+        <header>
+            <a href="../src/home.php">
+                <h2>Projeto Recomeços</h2>
+            </a>
+            <nav class="toolbar-actions">
+                <ul>
+                    <a href="../src/pets.php">
+                        <li>Conheça os Pets</li>
+                    </a>
+
+                    <a href="../src/doar.php">
+                        <li>Doar</li>
+                    </a>
+
+                    <a href="../src/quemSomos.php">
+                        <li>Quem somos</li>
+                    </a>
+                </ul>
+            </nav>    
+        </header>
+<<<<<<< HEAD
+=======
+            </nav>
+        </header>
+
+>>>>>>> d23ce0c018222f95e81b1be002ea435525ff68f7
+    </body>
 </html>

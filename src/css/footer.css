@@ -1,74 +1,107 @@
 footer {
-    background-image: url('https://cdn.vuetifyjs.com/images/backgrounds/vbanner.jpg');
-    background-size: cover;
+    background-color: #48302E;
     color: #fff;
-    padding: 20px 0;
-    font-family: Arial, sans-serif;
-    position: fixed;
+
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+
+    padding: 160px 0 120px 0;
+    margin: 0;
+
+    top: 100%;
     bottom: 0;
     width: 100%;
-    z-index: 1000;
 }
 
-
-.footer-container {
+footer section {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
-    padding: 0 20px;
+    gap: 150px;
 }
 
-.footer-section {
-    flex: 1;
-    margin: 20px;
-    min-width: 250px;
+/* SEÇÃO DE INFORMAÇÕES NO FOOTER */
+.footer-info div {
+    width: fit-content;
 }
 
-.footer-section h2 {
-    margin-bottom: 15px;
-    font-size: 18px;
-    text-transform: uppercase;
-}
-
-.footer-section p {
-    line-height: 1.6;
-    color: #fff;
-}
-
-.footer-section ul {
-    list-style: none;
+.footer-info h2 {
     padding: 0;
+    margin-bottom: 15px;
+
+    font-size: 24px;
+    font-weight: 600;
 }
 
-.footer-section ul li {
-    margin-bottom: 10px;
+/* DIV DE REDES SOCIAIS NO FOOTER */
+.footer-social img {
+    width: 30px;
+    margin-right: 10px;
+    cursor: pointer;
 }
 
+.footer-social img:hover {
+    filter: brightness(0.75);
+    transition: 0.15s;
+    transform: scale(0.95);
+}
 
-.footer-section ul li a {
+/* DIV DE MENU NO FOOTER */
+.footer-menu div {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.footer-menu div ul {
+    list-style: none;
+}
+
+.footer-menu div ul li {
     color: #fff;
-    text-decoration: none;
+
+    width:fit-content;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 6px;
+
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+
+    cursor: pointer;
 }
 
-
-.footer-section ul li a:hover {
-    color: #09a8cc;
-    text-decoration: underline;
+.footer-menu div ul li:hover {
+    filter: brightness(0.75);
+    transition: 0.15s;
+    transform: scale(1.05);
 }
 
-.footer-bottom {
+/* LINHA DIVISÓRIA ENTRE OS LINKS E O COPY */
+.footer-line {
+    border: none;
+    border-top: 1px solid #fff;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 50%;
+    margin: 65px auto 40px auto;
+}
+
+/* SEÇÃO DE DIREITOS AUTORAIS */
+.footer-copy {
+    color: #fff;
+
     text-align: center;
     padding: 20px 0;
-    color: #fff;
 }
 
-.footer-bottom p {
-    margin: 0;
-    font-size: 14px;
+.footer-copy p {
+    font-size: 17px;
+    font-weight: 300;
 }
 
-body {
-    margin: 0;
-    padding-bottom: 100px;
-    box-sizing: border-box;
-}

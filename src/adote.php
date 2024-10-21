@@ -9,6 +9,6 @@ include 'Componentes/header.php';
             <p>Descrição ou conteúdo principal da página.</p>
         </div>
 </main>
-<?php include '../Componentes/footer.php'; ?>
+<?php include 'Componentes/footer.php'; ?>
     <script src="/JavaScript/index.js"></script>
 </html>
