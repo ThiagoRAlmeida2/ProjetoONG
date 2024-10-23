@@ -46,8 +46,6 @@ include 'Componentes/header.php';
 
 </main>
 
-<?php include 'Componentes/footer.php'; ?>
-
 <script src="/JavaScript/index.js"></script>
 
     <?php include 'Componentes/slides.php' ?>

@@ -15,25 +15,20 @@ include 'Componentes/header.php';
     <div>
         <h1>QUEM SOMOS</h1>
         <div class="team-container">
-            <div class="team-member">
-                <img src="assets/images/transferir.png" alt="Amanda">
-                <h3>Amanda</h3>
-                <p>Enfermeira</p>
+        <div class="team-member">
+                <img src="assets/images/Carolina.jpeg" alt="Carolina">
+                <h3>Carolina Schachnik</h3>
+                <p>Idealizadora do projeto</p>
             </div>
             <div class="team-member">
-                <img src="assets/images/ana_mariano.jpg" alt="Ana Mariano">
-                <h3>Ana Mariano</h3>
-                <p>Produtora</p>
+                <img src="assets/images/bruna.jpeg" alt="Bruna">
+                <h3>Bruna</h3>
+                <p>Responsavel pelo gatil</p>
             </div>
             <div class="team-member">
-                <img src="assets/images/bruna_eiras.jpg" alt="Bruna Eiras">
-                <h3>Bruna Eiras</h3>
-                <p>Enfermeira</p>
-            </div>
-            <div class="team-member">
-                <img src="assets/images/bruna_hernandez.jpg" alt="Bruna Hernandez">
-                <h3>Bruna Hernandez</h3>
-                <p>Enfermeira</p>
+                <img src="assets/images/Leonne.jpeg" alt="Leonne">
+                <h3>Leonne Luiz</h3>
+                <p>Funcionário</p>
             </div>
             <!-- Adicione mais membros aqui -->
         </div>
