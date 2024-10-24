@@ -30,7 +30,7 @@ main {
 }
 
 .section-pets {
-    border: green solid 2px;
+    /* border: green solid 2px; */
 
     display: flex;
     flex-direction: row;
@@ -43,8 +43,6 @@ main {
 }
 
 .filtros {
-    border: red solid 1px;
-
     width: max-content;
     gap: 20px;
 
@@ -59,9 +57,7 @@ main {
     padding-bottom: 6px;
 }
 
-.filtros ul {
-    border: blue solid 1px;
-    
+.filtros ul {    
     list-style: none;
     gap:8px;
     display: flex;
@@ -83,41 +79,29 @@ main {
 
 /* DIV DOS CARDS DE PETS */
 .div-pets {
-    border: red solid 1px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    text-align: justify;
-
-    width: max-content;
-
+    width: fit-content;
     gap: 15px;
 }
 
 /* CARD INDIVIDUAL DO PET */
-.pet-card {
-    border: blue solid 1px;
-    
+.pet-card {  
     text-align: center;
     cursor: pointer;
-
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 200px;
+    
     gap: 10px;
 
     height: fit-content;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
 }
 
 .pet-card img {
     width: 100%;
-    bottom: 10px;
-    
-    display: block;
+    margin-bottom: 10px;
 
-    border-radius: 4px;
+    border-radius: 3px;
 }
 
 .pet-card img:hover {
@@ -125,10 +109,15 @@ main {
     filter: brightness(1.1);
 }
 
-/* .pet-card:hover {
-    transition: 0.3s;
-    transform: scale(0.96);
-} */
+.pet-card .pet-about h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.pet-card .pet-about p {
+    font-size: 16px;
+}
 
 .pets-line {
     border: none;
