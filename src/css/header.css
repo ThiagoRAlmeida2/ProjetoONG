@@ -22,9 +22,8 @@ header h2 {
 }
 
 header h2:hover {
-    transform:scale(1.05);
     transition: 0.25s;
-    opacity: 0.8;
+    opacity: 0.75;
 }
 
 nav {
@@ -46,7 +45,6 @@ nav ul li {
 }
 
 nav ul li:hover {
-    transform:scale(1.05);
     transition: 0.15s;
-    opacity: 0.8;
+    opacity: 0.75;
 }

@@ -1,8 +1,3 @@
-        <link rel="stylesheet" href="css/footer.css">
-        <link rel="stylesheet" href="css/resets.css">
-    </head>
-
-    <body>
         <footer>
             <section class="footer-info">
                 <div class="footer-social">
@@ -33,7 +28,7 @@
                             </a>
                         </ul>
 
-                        <ul>
+                        <ul style="display: none;">
                             <a href="../src/doar.php">
                                 <li>Doar</li>                            
                             </a>

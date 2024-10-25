@@ -6,8 +6,7 @@ footer {
     justify-items: center;
     justify-content: center;
 
-    /* Reduzindo o padding do rodapé */
-    padding: 60px 0 40px 0;
+    padding: 160px 0 120px 0;
     margin: 0;
 
     top: 100%;
@@ -20,8 +19,11 @@ footer section {
     justify-content: center;
     flex-wrap: wrap;
 
-    /* Reduzindo o espaçamento entre as seções */
-    gap: 80px;
+    gap: 150px;
+}
+
+footer section div h2 {
+    font-size: 18px;
 }
 
 /* SEÇÃO DE INFORMAÇÕES NO FOOTER */
@@ -31,7 +33,7 @@ footer section {
 
 .footer-info h2 {
     padding: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 
     font-size: 24px;
     font-weight: 600;
@@ -54,9 +56,7 @@ footer section {
 .footer-menu div {
     display: flex;
     flex-wrap: wrap;
-
-    /* Reduzindo o gap entre os menus */
-    gap: 40px;
+    gap: 50px;
 }
 
 .footer-menu div ul {
@@ -93,9 +93,8 @@ footer section {
     display: flex;
     flex-direction: column;
 
-    /* Reduzindo a largura da linha */
-    width: 40%;
-    margin: 40px auto 20px auto;
+    width: 50%;
+    margin: 65px auto 40px auto;
 }
 
 /* SEÇÃO DE DIREITOS AUTORAIS */
@@ -103,7 +102,7 @@ footer section {
     color: #fff;
 
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 .footer-copy p {
