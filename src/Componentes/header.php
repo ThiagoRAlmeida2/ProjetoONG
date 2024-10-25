@@ -25,7 +25,7 @@
                         <li>Conheça os Pets</li>
                     </a>
 
-                    <a href="../src/doar.php">
+                    <a style="display: none;" href="../src/doar.php">
                         <li>Doar</li>
                     </a>
 

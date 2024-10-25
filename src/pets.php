@@ -10,167 +10,63 @@
         </div>
         
         <section class="section-pets">
-            <div>
-                <form class="filtros">
+            <section class="filtros">
 
-                        <hr>
+                <div class="filtro">
+                    <h3>Raças</h3>
 
-                    <ul id="animal">
-                        <h3>Animais</h3>
+                    <div>
+                        <button class="btn-filtro" id="btn-filtro">Canino</button>
+                        <button class="btn-filtro" id="btn-filtro">Felino</button>
+                    </div>
+                </div>                
 
-                        <li>
-                            <input class="filtro" name="animal" value="canino" type="checkbox"> 
-                            <label>Canino</label>
-                        </li>
-                        <li>
-                            <input class="filtro" name="animal" value="felino" type="checkbox"> 
-                            <label>Felino</label>
-                        </li>
-                    </ul>
+                    <hr>
 
-                        <hr>
-
-                    <ul>
-                        <h3>Porte</h3>
-
-                        <li>
-                            <input type="radio" name="porte" id="porte">
-                            <label>G (mais de 25kg)</label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="porte" id="porte">
-                            <label>M (até 25kg)</label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="porte" id="porte">
-                            <label>P (até 10kg)</label>
-                        </li>
-                    </ul>
-
-                        <hr>
-
-                    <ul>
-                        <h3>Idade</h3>
-
-                        <li>
-                            <input type="radio" name="idade" id="idade">
-                            <label for="">Mais de 10 anos</label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="idade" id="idade">
-                            <label for="">Até 10 anos</label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="idade" id="idade">
-                            <label for="">Até 5 anos</label>
-                        </li>
-                    </ul>
-
-                        <hr>
-
-                    <ul>
-                        <h3>Sexo</h3>
-
-                        <li>
-                            <input type="radio" name="sexo" id="sexo">
-                            <label for="">Fêmea</label>
-                        </li>
-
-                        <li>
-                            <input type="radio" name="sexo" id="sexo">
-                            <label for="">Macho</label>
-                        </li>
-                    </ul>
+                <div class="filtro">
+                    <h3>Porte</h3>
                     
-                        <hr>
+                    <div>
+                        <button class="btn-filtro" id="btn-filtro" alt="mais de 25kg">Grande</button>
+                        <button class="btn-filtro" id="btn-filtro" alt="até de 25kg">Médio</button>
+                        <button class="btn-filtro" id="btn-filtro" alt="até de 10kg">Pequeno</button>
+                    </div>
+                </div> 
+
+                    <hr>
+
+                <div class="filtro">
+                    <h3>Idade</h3>
+
+                    <div>
+                        <button class="btn-filtro" id="btn-filtro">Idoso</button>
+                        <button class="btn-filtro" id="btn-filtro">Adulto</button>
+                        <button class="btn-filtro" id="btn-filtro">Filhote</button>
+                    </div>
+                </div> 
+
+                    <hr>
+
+                <div class="filtro">
+                    <h3>Sexo</h3>
+
+                    <div>
+                        <button class="btn-filtro" id="btn-filtro">Fêmea</button>
+                        <button class="btn-filtro" id="btn-filtro">Macho</button>
+                    </div>
+                </div> 
+            </section>
                 
-                </form>
-            </div>
-                
-            <div class="div-pets">
-                <div class="pet-card">
-                    <img src="./assets/images/odin.jpg" alt="odin">
-
-                    <div class="pet-about">
-                        <h3>Odin</h3>
-                        <p>Castrado</p>
-                        <p>Macho</p>
-                    </div>                        
-                </div>
-
-                <div class="pet-card">
-                    <img src="./assets/images/odin.jpg" alt="odin">
-
-                    <div class="pet-about">
-                        <h3>Odin</h3>
-                        <p>Castrado</p>
-                        <p>Macho</p>
-                    </div>                        
-                </div>
-
-                <div class="pet-card">
-                    <img src="./assets/images/odin.jpg" alt="odin">
-
-                    <div class="pet-about">
-                        <h3>Odin</h3>
-                        
-                        <p>Castrado</p>
-                        <p>Macho</p>
-                    </div>      
-                </div>
-
-                <div class="pet-card">
-                    <img src="./assets/images/odin.jpg" alt="odin">
-
-                    <div class="pet-about">
-                        <h3>Odin</h3>
-
-                        <p>Castrado</p>
-                        <p>Macho</p>
-                    </div>                        
-                </div>
-
-                <div class="pet-card">
-                    <img src="./assets/images/odin.jpg" alt="odin">
-
-                    <div class="pet-about">
-                        <h3>Odin</h3>
-
-                        <p>Castrado</p>
-                        <p>Macho</p>
-                    </div>      
-                </div>
-
-                <div class="pet-card">
-                    <img src="./assets/images/odin.jpg" alt="odin">
-
-                    <div class="pet-about">
-                        <h3>Odin</h3>
-
-                        <p>Castrado</p>
-                        <p>Macho</p>
-                    </div>                        
-                </div>
-
-                <div class="pet-card">
-                    <img src="./assets/images/odin.jpg" alt="odin">
-
-                    <div class="pet-about">
-                        <h3>Odin</h3>
-
-                        <p>Castrado</p>
-                        <p>Macho</p>
-                    </div>      
-                </div>
-            </div>
+            <section class="catalogo-pets" id="catalogo-pets">
+            </section>
         </section>
 
         <hr class="pets-line">
 
     </main>
+
+    <script src="./JavaScript/pets.js"></script>
+    <script src="./JavaScript/catalogoPets.js"></script>
+    <script src="./JavaScript/filtros.js"></script>
 
 <?php include 'Componentes/footer.php'; ?>

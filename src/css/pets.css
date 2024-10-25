@@ -51,34 +51,50 @@ main {
     text-align:justify;
 }
 
-.filtros h3 {
-    font-size: 16px;
-    font-weight: 600;
-    padding-bottom: 6px;
-}
-
-.filtros ul {    
+.filtros div {    
     list-style: none;
     gap:8px;
     display: flex;
     flex-direction: column;
 }
 
-.filtros ul li {
-    font-size: 14px;
-    font-weight: 400;
+.filtros div h3 {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 6px;
 }
 
-.filtros ul li, .filtros ul li input, .filtros ul li label {
+.filtros div div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.btn-filtro {
+    font-size: 13px;
+    font-weight: 400;
+
+    background-color: #fff;
+    border: #774C3E solid 1px;
+    border-radius: 2px;
+    padding: 8px 10px;
     cursor: pointer;
 }
 
-.filtros ul li input {
-    border: #774C3E solid 2px;
+.btn-filtro:hover {
+    background-color: #774C3E;
+    color: #fff;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.filtro-ativo {
+    background-color: #774C3E;
+    color: #fff;
 }
 
 /* DIV DOS CARDS DE PETS */
-.div-pets {
+.catalogo-pets {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
