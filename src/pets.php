@@ -4,7 +4,7 @@
 <?php include 'Componentes/header.php'; ?>
     
     <main>
-        <div class="bemVindo">
+        <div class="container" id="bemVindo">
             <p>Seja bem-vindo a nossa</p>
             <h1>Página de Adoção!</h1>
         </div>
@@ -19,7 +19,18 @@
                         <button class="btn-filtro" data-raca="Canino">Canino</button>
                         <button class="btn-filtro" data-raca="Felino">Felino</button>
                     </div>
-                </div>                
+                </div>
+                
+                <hr>
+
+                <div class="filtro">
+                    <h3>Sexo</h3>
+
+                    <div>
+                        <button class="btn-filtro" data-sexo="Fêmea">Fêmea</button>
+                        <button class="btn-filtro" data-sexo="Macho">Macho</button>
+                    </div>
+                </div> 
 
                     <hr>
 
@@ -45,17 +56,6 @@
                         <button class="btn-filtro" data-idade="Filhote" alt="menos de 5 anos">Filhote</button>
                     </div>
                 </div> 
-
-                    <hr>
-
-                <div class="filtro">
-                    <h3>Sexo</h3>
-
-                    <div>
-                        <button class="btn-filtro" data-sexo="Fêmea">Fêmea</button>
-                        <button class="btn-filtro" data-sexo="Macho">Macho</button>
-                    </div>
-                </div> 
             </section>
                 
             <section class="catalogo-pets" id="catalogo-pets">
@@ -64,6 +64,9 @@
 
         <hr class="pets-line">
 
+        <div class="container" id="exemplo">
+            <h1>Exemplo</h1>
+        </div>
     </main>
 
     <script src="./JavaScript/pets.js"></script>

@@ -1,9 +1,9 @@
 // Objeto para armazenar os filtros ativos
 let filtrosAtivos = {
-    raca: '',
-    porte: '',
-    idade: '',
-    sexo: '',
+    raca: [],
+    porte: [],
+    idade: [],
+    sexo: [],
 };
 
 // Função para renderizar os cards com base nos filtros ativos
@@ -12,10 +12,14 @@ function aplicarFiltros() {
     catalogo.innerHTML = ''; // Limpa o catálogo
 
     const petsFiltrados = petsLista.filter(pet => {
-        const racaFiltro = !filtrosAtivos.raca || pet.raca === filtrosAtivos.raca;
-        const porteFiltro = !filtrosAtivos.porte || pet.porte === filtrosAtivos.porte;
-        const idadeFiltro = !filtrosAtivos.idade || pet.idade === filtrosAtivos.idade;
-        const sexoFiltro = !filtrosAtivos.sexo || pet.sexo === filtrosAtivos.sexo;        
+        const racaFiltro = !filtrosAtivos.raca.length || 
+                            filtrosAtivos.raca.includes(pet.raca);
+        const porteFiltro = !filtrosAtivos.porte.length || 
+                            filtrosAtivos.porte.includes(pet.porte);
+        const idadeFiltro = !filtrosAtivos.idade.length || 
+                            filtrosAtivos.idade.includes(pet.idade);
+        const sexoFiltro = !filtrosAtivos.sexo.length || 
+                            filtrosAtivos.sexo.includes(pet.sexo);        
 
         return racaFiltro && porteFiltro && idadeFiltro && sexoFiltro;
     });
@@ -26,7 +30,8 @@ function aplicarFiltros() {
 
         petCard.innerHTML = `           
                 <div class="img-box">
-                    <img src="${pet.img}" alt="${pet.nome}">
+                    <img src="${pet.img}" aalt="Foto ${pet.sexo.toLowerCase() === 'macho' ? 'do' : 'da'} ${pet.raca.toLowerCase() === 'canino' ? (pet.sexo.toLowerCase() === 'macho' ? 'cão' : 'cadela') : 
+                        (pet.raca.toLowerCase() === 'felino' ? (pet.sexo.toLowerCase() === 'macho' ? 'gato' : 'gata') : '')} ${pet.nome}.">
                 </div>
 
                 <div class="pet-about">
@@ -57,14 +62,25 @@ function configurarFiltros() {
 
     botoesFiltro.forEach(botao => {
         botao.addEventListener('click', () => {
-            const tipo = botao.dataset.raca || botao.dataset.porte || botao.dataset.idade || botao.dataset.sexo;
+            const tipo = botao.dataset.raca || 
+                         botao.dataset.porte || 
+                         botao.dataset.idade || 
+                         botao.dataset.sexo;
 
-            const categoria = botao.dataset.raca ? 'raca' : botao.dataset.porte ? 'porte' : botao.dataset.idade  ? 'idade' : 'sexo';
+            const categoria = botao.dataset.raca ? 'raca' : 
+                              botao.dataset.porte ? 'porte' : 
+                              botao.dataset.idade  ? 'idade' : 'sexo';
 
             // Alterna o estado do botão e atualiza o filtro
             botao.classList.toggle('filtro-ativo');
-            filtrosAtivos[categoria] = botao.classList.contains('filtro-ativo') ? tipo : '';
 
+            if (botao.classList.contains('filtro-ativo')) {
+                // Adiciona o filtro ativo ao array
+                filtrosAtivos[categoria].push(tipo);
+            } else {
+                // Remove o filtro do array
+                filtrosAtivos[categoria] = filtrosAtivos[categoria].filter(f => f !== tipo);
+            }
             // Aplica os filtros e renderiza os cards
             aplicarFiltros();
         });
@@ -73,4 +89,5 @@ function configurarFiltros() {
 
 // Inicializa os filtros e exibe os cards
 configurarFiltros();
+
 aplicarFiltros();
