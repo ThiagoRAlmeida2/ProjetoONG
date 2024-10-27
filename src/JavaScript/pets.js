@@ -5,32 +5,102 @@ let petsLista = [
 
         img: "./assets/images/imgPets/odin.jpg",
         nome:"Odin",
-        animal :"Cachorro",
+        raca :"Canino",
+        porte: "Médio",
         sexo: "Macho",
-        idade: "2 anos",
+        idade: "jovem",
 
-            castrado:true
+            castrado:true,
+            vacinado:false,
+            vermifugado:false,
+            desparasitado:false,
+
+        tags: ""
     },
     {   
-        // ODIN
+        // NEGA
 
-        img: "./assets/images/imgPets/Odin.jpg",
-        nome:"Odin",
-        animal :"Cachorro",
+        img: "./assets/images/imgPets/nega.jpg",
+        nome:"Nega",
+        raca :"Canino",
+        porte: "Médio",
         sexo: "Fêmea",
-        idade: "2 anos",
+        idade: "Adulto",
 
-            castrado:true
+            castrado:false,
+            vacinado:false,
+            vermifugado:false,
+            desparasitado:false,
+
+        tags: "sociável, amorosa"
     },
     {   
-        // ODIN
+        // RENATINHO
 
-        img: "./assets/images/imgPets/Odin.jpg",
-        nome:"Odin",
-        animal :"Cachorro",
+        img: "./assets/images/imgPets/renatinho.jpg",
+        nome:"Renatinho",
+        raca :"Canino",
+        porte: "Médio",
+        sexo: "Macho",
+        idade: "Jovem",
+
+            castrado:true,
+            vacinado:true,
+            vermifugado:false,
+            desparasitado:true,
+
+        tags: "sociável"
+    },
+    {   
+        // CLARICE
+
+        img: "./assets/images/imgPets/clarice.jpg",
+        nome:"Clarice",
+        raca :"Felino",
+        porte: "Pequeno",
         sexo: "Fêmea",
-        idade: "2 anos",
+        idade: "Jovem",
 
-            castrado:true
+            castrado:true,
+            vacinado:true,
+            vermifugado:false,
+            desparasitado:false,
+
+        tags: ""
+    },
+    {   
+        // MARQUINHOS
+
+        img: "./assets/images/imgPets/marquinhos.jpg",
+        nome:"Marquinhos",
+        raca :"Canino",
+        porte: "Médio",
+        sexo: "Macho",
+        idade: "Jovem",
+
+            castrado:true,
+            vacinado:true,
+            vermifugado:false,
+            desparasitado:true,
+
+        tags: ""
+    },
+    {   
+        // PEROLA
+
+        img: "./assets/images/imgPets/perola.jpg",
+        nome:"Pérola",
+        raca :"Felino",
+        porte: "Pequeno",
+        sexo: "Fêmea",
+        idade: "Filhote",
+
+            castrado:false,
+            vacinado:false,
+            vermifugado:true,
+            desparasitado:false,
+            vermifugado:false,
+
+        tags: ""
     }
 ];

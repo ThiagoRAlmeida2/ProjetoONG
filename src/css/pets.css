@@ -6,10 +6,7 @@ main {
     align-items: center;
 }
 
-.bemVindo {
-    background-color: #774C3E;
-    color: #FFF;
-
+.container {
     text-align: center;
     padding: 200px 0;
     width: 100%;
@@ -19,36 +16,46 @@ main {
     justify-content: space-around;
 }
 
-.bemVindo p {
-    font-size: 22px;
+#bemVindo {
+    background-color: #7c5143;
+    color: #FFF;
+}
+
+#bemVindo p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#bemVindo h1 {
+    font-size: 28px;
     font-weight: 400;
 }
 
-.bemVindo h1 {
-    font-size: 40px;
-    font-weight: 600;
-}
-
 .section-pets {
-    /* border: green solid 2px; */
-
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 
-    width: 60%;
+    width: fit-content;
 
     margin: 100px 0 40px 0;
     gap: 100px;
 }
 
 .filtros {
-    width: max-content;
+    width: 175px;
     gap: 20px;
 
     display: flex;
     flex-direction: column;
     text-align:justify;
+}
+
+.filtros hr {
+    width: 125px;
+    margin-left: 5px;
+    border: none;
+    border-top: #774C3E solid 1px;
 }
 
 .filtros div {    
@@ -98,7 +105,8 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
 
-    width: fit-content;
+    width: 50%;
+    min-width: 800px;
     gap: 15px;
 }
 
@@ -110,38 +118,58 @@ main {
     gap: 10px;
 
     height: fit-content;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
-.pet-card img {
+.img-box {
     width: 100%;
-    margin-bottom: 10px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
 
     border-radius: 3px;
+    margin-bottom: 10px;
 }
 
-.pet-card img:hover {
+.img-box img {
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-box img:hover {
     transition: 0.2s;
     filter: brightness(1.1);
 }
 
 .pet-card .pet-about h3 {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 500;
     margin-bottom: 5px;
 }
 
 .pet-card .pet-about p {
     font-size: 16px;
+    font-weight: 300;
 }
 
 .pets-line {
     border: none;
-    border-top: #010101 solid 1px;
+    border-top: #774C3E solid 1px;
 
     display: flex;
     flex-direction: column;
     
     width: 55%;
     margin: 40px auto 40px auto;
+}
+
+#exemplo {
+    background-color: #FEEEC7;
+}
+
+#exemplo h1 {
+    color: #7c5143;
+    font-weight: 400;
+    font-size: 30px;
 }

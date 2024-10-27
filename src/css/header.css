@@ -1,6 +1,6 @@
 
 header {
-    background-color: #F8CC59;
+    background-color: #facb53;
 
     width: 100%;
     position: relative;
@@ -11,19 +11,19 @@ header {
     justify-content: space-evenly;
     display: flex;
     align-items: center;
+    gap: 220px;
 }
 
 header h2 {
-    color: #774C3E;
+    color: #7c5143;
     
-    font-weight: 600;
-    font-size: 22px;
+    font-weight: 500;
+    font-size: 20px;
     cursor: pointer;
 }
-
 header h2:hover {
-    transition: 0.25s;
-    opacity: 0.75;
+    transform: scale(0.95);
+    transition: 0.2s;
 }
 
 nav {
@@ -37,7 +37,7 @@ nav ul {
 }
 
 nav ul li {
-    color: #774C3E;
+    color: #7c5143;
 
     font-weight: 400;
     text-decoration: none;
@@ -45,6 +45,6 @@ nav ul li {
 }
 
 nav ul li:hover {
-    transition: 0.15s;
-    opacity: 0.75;
+    transform: scale(0.95);
+    transition: 0.2s;
 }

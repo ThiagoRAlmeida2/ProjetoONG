@@ -4,22 +4,33 @@
 <?php include 'Componentes/header.php'; ?>
     
     <main>
-        <div class="bemVindo">
+        <div class="container" id="bemVindo">
             <p>Seja bem-vindo a nossa</p>
             <h1>Página de Adoção!</h1>
         </div>
         
         <section class="section-pets">
-            <section class="filtros">
+            <section class="filtros" id="filtros">
 
                 <div class="filtro">
-                    <h3>Raças</h3>
+                    <h3>Raça</h3>
 
                     <div>
-                        <button class="btn-filtro" id="btn-filtro">Canino</button>
-                        <button class="btn-filtro" id="btn-filtro">Felino</button>
+                        <button class="btn-filtro" data-raca="Canino">Canino</button>
+                        <button class="btn-filtro" data-raca="Felino">Felino</button>
                     </div>
-                </div>                
+                </div>
+                
+                <hr>
+
+                <div class="filtro">
+                    <h3>Sexo</h3>
+
+                    <div>
+                        <button class="btn-filtro" data-sexo="Fêmea">Fêmea</button>
+                        <button class="btn-filtro" data-sexo="Macho">Macho</button>
+                    </div>
+                </div> 
 
                     <hr>
 
@@ -27,9 +38,9 @@
                     <h3>Porte</h3>
                     
                     <div>
-                        <button class="btn-filtro" id="btn-filtro" alt="mais de 25kg">Grande</button>
-                        <button class="btn-filtro" id="btn-filtro" alt="até de 25kg">Médio</button>
-                        <button class="btn-filtro" id="btn-filtro" alt="até de 10kg">Pequeno</button>
+                        <button class="btn-filtro" data-porte="Grande" alt="mais de 25kg">Grande</button>
+                        <button class="btn-filtro" data-porte="Médio" alt="até de 25kg">Médio</button>
+                        <button class="btn-filtro" data-porte="Pequeno" alt="até de 10kg">Pequeno</button>
                     </div>
                 </div> 
 
@@ -39,20 +50,10 @@
                     <h3>Idade</h3>
 
                     <div>
-                        <button class="btn-filtro" id="btn-filtro">Idoso</button>
-                        <button class="btn-filtro" id="btn-filtro">Adulto</button>
-                        <button class="btn-filtro" id="btn-filtro">Filhote</button>
-                    </div>
-                </div> 
-
-                    <hr>
-
-                <div class="filtro">
-                    <h3>Sexo</h3>
-
-                    <div>
-                        <button class="btn-filtro" id="btn-filtro">Fêmea</button>
-                        <button class="btn-filtro" id="btn-filtro">Macho</button>
+                        <button class="btn-filtro" data-idade="Idoso" alt="mais de 10 anos">Idoso</button>
+                        <button class="btn-filtro" data-idade="Adulto" alt="até 10 anos">Adulto</button>
+                        <button class="btn-filtro" data-idade="Jovem" alt="até 5 anos">Jovem</button>
+                        <button class="btn-filtro" data-idade="Filhote" alt="menos de 5 anos">Filhote</button>
                     </div>
                 </div> 
             </section>
@@ -63,10 +64,12 @@
 
         <hr class="pets-line">
 
+        <div class="container" id="exemplo">
+            <h1>Exemplo</h1>
+        </div>
     </main>
 
     <script src="./JavaScript/pets.js"></script>
     <script src="./JavaScript/catalogoPets.js"></script>
-    <script src="./JavaScript/filtros.js"></script>
 
 <?php include 'Componentes/footer.php'; ?>
