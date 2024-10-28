@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="password">Senha:</label>
+            <input type="password" id="password" required>
+
+            <button type="button" onclick="authenticate()">Entrar</button>
+        </form>
+        <p id="errorMessage"></p>
+    </div>
+
+    <script>
+        function authenticate() {
+            const email = document.getElementById("email").value;
+            const password = document.getElementById("password").value;
+
+            if (email === "recomecosprojeto@gmail.com" && password === "OngPets12!") {
+                // Armazena a sessão de login e redireciona
+                localStorage.setItem("authenticated", "true");
+                window.location.href = "adicionarPet.php";
+            } else {
+                document.getElementById("errorMessage").innerText = "Email ou senha incorretos!";
+            }
+        }
+    </script>
+</body>
+</html>
