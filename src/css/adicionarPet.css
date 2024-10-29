@@ -1,42 +1,123 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
-}
 
-.container {
-    max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1, h2 {
-    text-align: center;
-}
-
-form {
-    margin-bottom: 20px;
-}
-
-table {
+main {
     width: 100%;
-    border-collapse: collapse;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
 }
 
-table, th, td {
-    border: 1px solid #ccc;
+.petForm {
+    border: #7c5143 solid 1px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+
+    padding: 20 30px;
+    margin-top: 20px;
 }
 
-th, td {
-    padding: 10px;
+.petForm h2 {
+    color: #7c5143;
+    margin-bottom: 12px;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.petForm input, .petForm select {
+    border: #7c5143 solid 1px;
+    
+    width: 80%;
+    border-radius: 3px;
+    padding: 8px 10px;
+    margin: 5px;
+
+    font-size: 13px;
+}
+
+.petForm button {
+    background-color: #7c5143;
+    color: #fff;
+
+    width: 55%;
+    border-radius: 3px;
+    border: none;
+    padding: 10px 6px;
+    margin-top: 16px;
+
+    font-size: 14px;
+}
+
+.section-tabelaPets {
+    /* border: green solid 1px; */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px auto 40px auto;
+    gap: 20px;
+}
+
+.tabelaPets {
+    border: #7c5143 solid 1px;
+    padding: 40px;
+    padding-bottom: 15px;
+    border-radius: 6px;
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+
+    width: 50%;
+    min-width: 800px;
+    min-height: 370px;
+    gap: 15px;
+}
+
+/* CARD INDIVIDUAL DO PET */
+.pet-card {  
+    /* border: blue solid 1px; */
+
     text-align: center;
+    cursor: pointer;
+    gap: 10px;
+
+    height: fit-content;
+    padding-bottom: 15px;
 }
 
-button {
+.pet-card .img-box-solid  {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.pet-card .img-box-solid img {
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.pet-card .pet-card .pet-about h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.pet-card .pet-card .pet-about p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.pet-card button {
     background-color: #4CAF50;
     color: white;
     border: none;
@@ -45,7 +126,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.pet-card button:hover {
     background-color: #45a049;
 }
 
