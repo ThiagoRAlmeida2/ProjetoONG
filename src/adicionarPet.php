@@ -1,52 +1,43 @@
-
 <title>CRUD de Pets</title>
-<link rel="stylesheet" href="./css/adicionarPet.css">
 
 <?php include "Componentes/header.php" ?>
 
-    <body>
-        <main>
+<body>
+    <main>
+        <form id="petForm" class="petForm">
+            <h2>Cadastro de Pets</h2>
+            
+            <input placeholder="Nome" type="text" id="petNome" required>
 
-        </main>
+            <select id="petSexo" required>
+                <option value="">Sexo</option>
+                <option value="macho">Macho</option>
+                <option value="fêmea">Fêmea</option>
+            </select>
 
-        <div class="container">
-            <h1>Cadastro de Pets</h1>
-            <form id="petForm">
-                <input type="hidden" id="petId"> <!-- Campo oculto para ID do pet -->
-                
-                <label for="petFoto">Foto do Pet:</label>
-                <input type="file" id="petFoto" accept="image/*"><br><br>
-                
-                <label for="petNome">Nome:</label>
-                <input type="text" id="petNome" required><br><br>
+            <input placeholder="Idade" type="number" id="petIdade" required>
 
-                <label for="petIdade">Idade:</label>
-                <input type="number" id="petIdade" required><br><br>
+            <input placeholder="Raça" type="text" id="petRaca" required>
 
-                <label for="petRaca">Raça:</label>
-                <input type="text" id="petRaca" required><br><br>
+            <select aria-placeholder="Porte" id="petPorte" required>
+                <option value="">Porte</option>
+                <option value="pequeno">Pequeno</option>
+                <option value="médio">Médio</option>
+                <option value="grande">Grande</option>
+            </select>
 
-                <label for="petCaracteristica">Característica:</label>
-                <input type="text" id="petCaracteristica" required><br><br>
+            <input type="file" id="petFoto" accept="image/*">
 
-                <button type="submit">Adicionar Pet</button>
-            </form>
+            <button type="submit">Adicionar Pet</button>
+        </form>
 
+        <section class="section-tabelaPets">
             <h2>Lista de Pets</h2>
-            <table id="petTable">
-                <thead>
-                    <tr>
-                        <th>Foto</th>
-                        <th>Nome</th>
-                        <th>Idade</th>
-                        <th>Raça</th>
-                        <th>Característica</th>
-                        <th>Ações</th>
-                    </tr>
-                </thead>
-                <tbody></tbody>
-            </table>
-        </div>
+
+            <section id="tabelaPets" class="tabelaPets">
+            </section>
+        </section>
+    </main>
 
     <script type="module" src="./JavaScript/adicionarPet.js"></script>
 

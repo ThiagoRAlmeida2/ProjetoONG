@@ -2,104 +2,125 @@ import { db } from '../service/firebase.js';
 import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js";
 import { collection, addDoc, updateDoc, getDocs, doc, deleteDoc } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
 
-// Inicializa Firebase Storage
 const storage = getStorage();
 const petForm = document.getElementById("petForm");
 
-// Adiciona evento ao formulário
+let atualId = 0; 
+
+async function proxId() {
+    const petsSnapshot = await getDocs(collection(db, "pets"));
+    atualId = petsSnapshot.size;
+
+    return String(atualId + 1).padStart(3, '0'); 
+}
+
 petForm.addEventListener("submit", async function (e) {
     e.preventDefault();
 
     const nome = document.getElementById("petNome").value;
+    const sexo = document.getElementById("petSexo").value;
     const idade = document.getElementById("petIdade").value;
     const raca = document.getElementById("petRaca").value;
-    const caracteristica = document.getElementById("petCaracteristica").value;
-    const petFoto = document.getElementById("petFoto").files[0]; // Foto selecionada
-    const petId = document.getElementById("petId").value;
+    const porte = document.getElementById("petPorte").value;
+    const imgPet = document.getElementById("petFoto").files[0];
+    const Id = document.getElementById("petId").value;
 
     try {
-        let fotoUrl = "";
+        let imgURL = "";
 
-        if (petFoto) {
-            const storageRef = ref(storage, `pets/${petFoto.name}`);
-            await uploadBytes(storageRef, petFoto);
-            fotoUrl = await getDownloadURL(storageRef);
+        if (imgPet) {
+            const storageRef = ref(storage, `pets/${imgPet.name}`);
+            await uploadBytes(storageRef, imgPet);
+            imgURL = await getDownloadURL(storageRef);
         
-            // Verifique se a URL da foto foi recuperada corretamente
-            if (!fotoUrl) {
+            if (!imgURL) {
                 throw new Error("URL da foto não pôde ser recuperada.");
             }
         }        
 
         const petData = {
+            id: await proxId(),
             nome,
+            sexo,
             idade,
             raca,
-            caracteristica,
-            foto: fotoUrl // URL da foto
+            porte,
+            img: imgURL
         };
 
-        if (petId) {
-            // Edita pet existente
-            await updateDoc(doc(db, "pets", petId), petData);
+        if (Id) {
+            await updateDoc(doc(db, "pets", Id), petData);
         } else {
-            // Adiciona novo pet
-            await addDoc(collection(db, "pets"), petData);
+            await addDoc(collection(db, "pets"), petData); 
         }
 
         petForm.reset();
-        document.getElementById("petId").value = ""; // Limpa ID após salvar
+        document.getElementById("petId").value = "";
         carregarPets();
     } catch (error) {
         console.error("Erro ao salvar o pet:", error);
     }
 });
 
-// Função para carregar os pets
 async function carregarPets() {
     try {
-        const querySnapshot = await getDocs(collection(db, "pets"));
-        const petTable = document.getElementById("petTable").getElementsByTagName("tbody")[0];
-        petTable.innerHTML = "";
+        const mostrarpets = await getDocs(collection(db, "pets"));
+        const catalogoPets = document.getElementById("tabelaPets");
+        catalogoPets.innerHTML = "";
 
-        querySnapshot.forEach((doc) => {
-            const pet = doc.data();
-            const row = petTable.insertRow();
+        mostrarpets.forEach((pets) => {
+            const pet = pets.data();            
+            const petCard = document.createElement('div');
+            petCard.classList.add('pet-card');
 
-            row.innerHTML = `
-                <td><img src="${pet.foto}" alt="Foto do Pet" width="100"></td>
-                <td>${pet.nome}</td>
-                <td>${pet.idade}</td>
-                <td>${pet.raca}</td>
-                <td>${pet.caracteristica}</td>
-                <td>
-                    <button onclick="editarPet('${doc.id}', '${pet.nome}', '${pet.idade}', '${pet.raca}', '${pet.caracteristica}')">Editar</button>
-                    <button onclick="deletarPet('${doc.id}')">Deletar</button>
-                </td>
+            const sexo = pet.sexo ? pet.sexo.toLowerCase() : 'desconhecido';
+            const raca = pet.raca ? pet.raca.toLowerCase() : 'desconhecida';
+            const nome = pet.nome ? pet.nome : 'desconhecido';
+            const petId = pet.id;
+
+            petCard.innerHTML = `
+                <div class="img-box-solid">
+                    <img src="${pet.img}" alt="Foto ${sexo === 'macho' ? 'do' : 'da'} ${raca === 'canino' ? (sexo === 'macho' ? 'cão' : 'cadela') : 
+                        (raca === 'felino' ? (sexo === 'macho' ? 'gato' : 'gata') : '')} ${nome}.">
+                </div>
+            
+                <div class="pet-about">
+                    <h3>${pet.nome}</h3>
+                    <p>ID: ${petId}</p>
+                    <p>Sexo: ${pet.sexo}</p>
+                    <p>Idade: ${pet.idade}</p>
+                    <p>Raça: ${pet.raca}</p>
+                    <p>Porte: ${pet.porte}</p>
+                </div>
+
+                <div>
+                    <button onclick="editarPet('${pets.id}', '${pet.nome}', '${pet.sexo}', '${pet.idade}', '${pet.raca}', '${pet.porte}')">Editar</button>
+                    <button onclick="deletarPet('${pets.id}')">Deletar</button>
+                </div>
             `;
+            catalogoPets.appendChild(petCard);
         });
     } catch (error) {
         console.error("Erro ao carregar pets:", error);
     }
 }
 
-// Funções globais para editar e deletar pets
-window.editarPet = function (id, nome, idade, raca, caracteristica) {
+window.editarPet = function (id, nome, sexo, idade, raca, porte) {
     document.getElementById("petId").value = id;
     document.getElementById("petNome").value = nome;
+    document.getElementById("petSexo").value = sexo;
     document.getElementById("petIdade").value = idade;
     document.getElementById("petRaca").value = raca;
-    document.getElementById("petCaracteristica").value = caracteristica;
+    document.getElementById("petPorte").value = porte;
 };
 
 window.deletarPet = async function (id) {
     try {
         await deleteDoc(doc(db, "pets", id));
-        carregarPets(); // Recarrega a lista de pets
+        carregarPets();
     } catch (error) {
         console.error("Erro ao deletar pet:", error);
     }
 };
 
-// Carrega pets ao iniciar a página
 carregarPets();
