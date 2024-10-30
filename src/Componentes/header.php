@@ -24,11 +24,6 @@
                     <a href="../src/pets.php">
                         <li>Conheça os Pets</li>
                     </a>
-
-                    <a style="display: none;" href="../src/doar.php">
-                        <li>Doar</li>
-                    </a>
-
                     <a href="../src/quemSomos.php">
                         <li>Quem somos</li>
                     </a>
