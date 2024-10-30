@@ -8,8 +8,7 @@
   },
   "private": true,
   "dependencies": {
-    "firebase": "^10.14.1",
-    "vercel": "^37.13.0"
+    "firebase": "^10.14.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.25.6",
