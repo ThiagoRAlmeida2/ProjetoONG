@@ -1,6 +1,6 @@
 <title>CRUD de Pets</title>
 
-<?php include "Componentes/header.php" ?>
+<?php include "Componentes/header.html" ?>
 
 <body>
     <main>
@@ -41,4 +41,4 @@
 
     <script type="module" src="./JavaScript/adicionarPet.js"></script>
 
-<?php include "Componentes/footer.php" ?>
+<?php include "Componentes/footer.html" ?>

@@ -1,6 +1,6 @@
 <?php
 $titulo = "Quem somos nós?";
-include 'Componentes/header.php';
+include 'Componentes/header.html';
 ?>
 
 <head>
@@ -35,5 +35,5 @@ include 'Componentes/header.php';
     </div>
 </body>
 
-<?php include 'Componentes/footer.php'; ?>
+<?php include 'Componentes/footer.html'; ?>
 <script src="../../JavaScript/index.js"></script>

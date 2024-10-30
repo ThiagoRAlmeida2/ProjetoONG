@@ -1,7 +1,7 @@
 
 <title>Conheça os Pets</title>
 
-<?php include 'Componentes/header.php'; ?>
+<?php include 'Componentes/header.html'; ?>
     
     <main>
         <div class="container" id="bemVindo">
@@ -72,4 +72,4 @@
     <script src="./JavaScript/pets.js"></script>
     <script src="./JavaScript/catalogoPets.js"></script>
 
-<?php include 'Componentes/footer.php'; ?>
+<?php include 'Componentes/footer.html'; ?>
