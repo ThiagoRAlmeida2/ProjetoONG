@@ -12,11 +12,16 @@ img {
   
 #button-overlay {
     position: absolute;
-    top: 50%;
+    top: 75%;
     left: 50%;
     transform: translate(-50%, -50%);
     border: none;
     /* Outros estilos para personalizar o botão */
+}
+
+#container {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .button {
@@ -54,11 +59,6 @@ img {
     border: 2px solid red;
 }
 
-#container {
-    width: 80%;
-    margin: 0 auto;
-}
-  
 .texto-centralizado {
     text-align: center;
     color: #774C3E;
