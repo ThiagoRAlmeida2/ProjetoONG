@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Recomeços</title>
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos para o slideshow */
+        .slideshowContainer {
+            position: relative;
+            max-width: 100%; /* Ajuste a largura conforme necessário */
+            margin: auto;
+        }
+
+        .slideImg {
+            display: none; /* Esconder todas as imagens inicialmente */
+        }
+
+        .fade {
+            animation: fade 1.5s ease-in-out;
+        }
+
+        @keyframes fade {
+            from { opacity: 0.4 }
+            to { opacity: 1 }
+        }
+
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            cursor: pointer;
+        }
+
+        .active, .dot:hover {
+            background-color: #717171;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="../src/home.html">
+            <h2>Projeto Recomeços</h2>
+        </a>
+        <nav class="toolbar-actions">
+            <ul>
+                <a href="../src/pets.html">
+                    <li>Conheça os Pets</li>
+                </a>
+                <a href="../src/quemSomos.html">
+                    <li>Quem somos</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Slideshow -->
+        <div class="slideshowContainer">
+            <!-- Slide 1 -->
+            <div class="slideImg fade">
+                <img src="./assets/feira_de_adocao.jpg" style="width:100%">
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="slideImg fade">
+                <img src="./assets/feira_de_adocao.jpg" style="width:100%">
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="slideImg fade">
+                <img src="./assets/feira_de_adocao.jpg" style="width:100%">
+            </div>
+
+            <!-- Botões de navegação -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <br>
+
+        <!-- Bolinhas indicativas -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
+        <!-- Resto do conteúdo da página -->
+        <div>
+            <!-- PRIMEIRO BLOCO - FOTO 'NOSSO LAR' -->
+            <img src="assets/images/dog_aleatorio.jpg">
+            <h1>Nosso abrigo</h1>
+        </div>
+
+        <!-- Adicione o restante do conteúdo da página aqui... -->
+    </main>
+
+    <footer>
+        <section class="footer-info">
+            <div class="footer-social">
+                <h2>Projeto Recomeços</h2>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="./assets/images/icon facebook.svg" alt="ícone do facebook.">
+                </a>
+                <a href="https://www.instagram.com/projetorecomecos" target="_blank">
+                    <img src="./assets/images/icon instagram.svg" alt="ícone do instagram.">
+                </a>
+            </div>
+            <div class="footer-menu">
+                <div>
+                    <h2>Menu</h2>
+                </div>
+                <div>
+                    <ul>
+                        <a href="../src/pets.html">
+                            <li>Conheça os Pets</li>
+                        </a>
+                        <a href="../src/quemSomos.html">
+                            <li>Quem somos</li>
+                        </a>
+                    </ul>
+                    <ul style="display: none;">
+                        <a href="../src/doar.html">
+                            <li>Doar</li>                            
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <hr class="footer-line">
+        <section class="footer-copy">
+            <p>&copy; 2024 Projeto Recomeços | Desenvolvido por Pet Lovers</p>
+        </section>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("slideImg");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}    
+            if (n < 1) {slideIndex = slides.length}
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex-1].style.display = "block";  
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
+</body>
+</html>
