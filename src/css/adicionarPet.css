@@ -16,7 +16,7 @@ main {
     align-items: center;
     border-radius: 6px;
 
-    padding: 20 30px;
+    padding: 20px 30px;
     margin-top: 20px;
 }
 
@@ -36,6 +36,7 @@ main {
     margin: 5px;
 
     font-size: 13px;
+    cursor: pointer;
 }
 
 .petForm button {
@@ -49,6 +50,7 @@ main {
     margin-top: 16px;
 
     font-size: 14px;
+    cursor: pointer;
 }
 
 .section-tabelaPets {
