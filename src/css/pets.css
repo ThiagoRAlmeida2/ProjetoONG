@@ -17,17 +17,45 @@ main {
 }
 
 #bemVindo {
-    background-color: #7c5143;
     color: #FFF;
+
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+#bemVindo img {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    z-index: 0;
+
+    filter: brightness(25%) contrast(65%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(60%);
+
+    transition: transform 1s ease;
+}
+
+#bemVindo img:hover {
+    transform: scale(1.05);
+}
+
+#bemVindo * {
+    position: relative;
+    z-index: 1;
 }
 
 #bemVindo p {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 300;
 }
 
 #bemVindo h1 {
-    font-size: 28px;
+    font-size: 30px;
     font-weight: 400;
 }
 
@@ -164,12 +192,40 @@ main {
     margin: 40px auto 40px auto;
 }
 
-#exemplo {
-    background-color: #FEEEC7;
+#doacao {
+    color: #FFF;
+
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
 }
 
-#exemplo h1 {
-    color: #7c5143;
+#doacao img {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    z-index: 0;
+
+    filter: brightness(20%) contrast(60%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(55%);
+
+    transition: transform 1s ease;
+}
+
+#doacao img:hover {
+    transform: scale(1.03);
+}
+
+#doacao * {
+    position: relative;
+    z-index: 1;
+}
+
+#doacao h1 {
     font-weight: 400;
     font-size: 30px;
 }

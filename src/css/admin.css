@@ -101,7 +101,7 @@ main {
     align-items: center;
 
     width: 800px;
-    max-width: 50%;
+    max-width: 55%;
     margin: 0;
     padding: 0;
 }
@@ -113,7 +113,7 @@ main {
     border-radius: 6px;
 
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(149px, 1fr));
 
     width: 100%;
     min-height: 300px;
@@ -149,13 +149,13 @@ main {
 }
 
 .pet-about {
-    margin: 6px 0;
     margin-bottom: 8px;
     border-radius: 4px;
     padding: 10px;
 }
 
 .pet-about p {
+    padding-left: 12px;
     text-align: justify;
     font-size: 14px;
     font-weight: 300;
