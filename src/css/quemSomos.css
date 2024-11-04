@@ -1,43 +1,127 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #faf3e0;
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 30px 0 0;
 }
 
-h1 {
+.quem-somos-titulo {
+    font-weight: 600;
+    font-size: 35px;
+    margin-bottom: 10px;
     text-align: center;
-    color: #ffb400;
+    color: #48302E;
 }
 
-/* Grid para os membros da equipe com limite de 3 fotos por linha */
-.team-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-    gap: 20px;
-    max-width: 1200px; /* Define uma largura máxima */
-    margin: 0 auto;
-    padding: 20px;
+.section-line {
+    border-top: #7c5143 solid 1px;
+    width: 80%;
 }
 
-.team-member {
+.members-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.members-div {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+.member-card {
+    margin: 30px 0;
+    padding: 6px 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
 }
 
-.team-member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
+.member-card .img-member {    
+    width: 180px;
+    height: 180px;
+    border-radius: 6px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.member-card .img-member img {
     object-fit: cover;
-    border: 2px solid #ffb400;
+    object-position: center;
+    width: 100%;
+
+    position: absolute;
 }
 
-.team-member h3 {
-    margin: 10px 0 5px 0;
-    font-size: 1.1em;
-    color: #333;
+.member-card h3 {
+    color: #7c5143;
+    padding: 8px 0 2px;
+
+    font-size: 20px;    
+    font-weight: 500;
 }
 
-.team-member p {
-    margin: 0;
-    font-size: 0.9em;
-    color: #666;
+.member-card p {
+    color: #101010;
+    margin-top: 4px;
+    font-size: 17px;    
+    font-weight: 300;
 }
+
+.conheca-os-pets {
+    cursor: pointer;
+    height: 380px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    overflow: hidden;
+    position: relative;
+}
+
+.conheca-os-pets * {
+    z-index: 1;
+    position: relative;
+}
+
+.conheca-os-pets h3 {
+    color: #faf3e0;
+    text-shadow: #101010 4px 4px;
+    mix-blend-mode:luminosity;
+    font-weight: 500;
+    font-size: 44px;
+}
+
+.conheca-os-pets img {
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+
+    filter: brightness(25%) contrast(70%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(55%);
+    transition: transform 1s ease, filter 1s ease;
+}
+
+.conheca-os-pets img:hover {
+    transform: scale(1.03);
+    filter: brightness(32%) contrast(72%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(55%);
+}
+

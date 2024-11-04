@@ -8,7 +8,11 @@
     <title>Conheça os Pets</title>
     <link rel="icon" href="./assets/images/logo clara projeto recomecos.svg">
 
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/resets.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/pets.css">
+    <link rel="stylesheet" href="./css/footer.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
@@ -33,13 +37,13 @@
     </header>
 
     <main>
-        <div class="container" id="bemVindo">
+        <a class="container bemVindo">
             <img src="./assets/images/canil projeto recomecos.jpg" alt="canil projeto recomecos">
-            <p>Seja bem-vindo a nossa</p>
+            <p>seja bem-vindo a nossa</p>
             <h1>Página de Adoção!</h1>
-        </div>
+        </a>
 
-        <section class="section-pets">
+        <section class="section-pets" id="section-pets">
             <section class="filtros" id="filtros">
                 <div class="filtro">
                     <h3>Raça</h3>
@@ -89,13 +93,13 @@
 
         <hr class="pets-line">
 
-        <div class="container" id="doacao">
+        <div class="container doacao">
             <img src="./assets/images/gatinhos fundo.jpg" alt="foto dos gatinhos">
             <h1>Faça uma doação!</h1>
         </div>
     </main>
 
-    <script type="module" src="./JavaScript/pets.js"></script>
+    <script type="module" src="./JavaScript/pets.js" defer></script>
 
     <footer>
         <section class="footer-info">
