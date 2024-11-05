@@ -37,7 +37,7 @@ include 'Componentes/header.php';
         </div>
         <div class="image-container">
             <img src="assets/images/dog_aleatorio.jpg">
-            <button class="button" id="button-overlay">Fazer doacao</button> 
+            <button class="button" id="button-overlay">Fazer doação!</button> 
         </div>
         <div class="image-container">
             <img src="assets/images/dog_aleatorio.jpg">
