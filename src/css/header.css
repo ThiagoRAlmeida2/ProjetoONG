@@ -1,30 +1,31 @@
 
 header {
-    background-color: #F8CC59;
+    background-color: #fdcb67;
 
     width: 100%;
     position: relative;
     background-size: cover;
     color: white;
-    padding: 24px 0;
+    padding: 20px 0;
 
     justify-content: space-evenly;
     display: flex;
     align-items: center;
+    gap: 500px;
 }
 
 header h2 {
-    color: #774C3E;
+    color: #7c5143;
     
-    font-weight: 600;
-    font-size: 22px;
+    font-weight: 500;
+    font-size: 20px;
     cursor: pointer;
+
+    transition: transform 0.3s ease;
 }
 
 header h2:hover {
-    transform:scale(1.05);
-    transition: 0.25s;
-    opacity: 0.8;
+    transform: scale(0.96);
 }
 
 nav {
@@ -38,15 +39,15 @@ nav ul {
 }
 
 nav ul li {
-    color: #774C3E;
+    color: #7c5143;
 
     font-weight: 400;
     text-decoration: none;
     cursor: pointer;
+
+    transition: transform 0.3s ease;
 }
 
 nav ul li:hover {
-    transform:scale(1.05);
-    transition: 0.15s;
-    opacity: 0.8;
+    transform: scale(0.96);
 }

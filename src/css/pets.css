@@ -6,10 +6,7 @@ main {
     align-items: center;
 }
 
-.bemVindo {
-    background-color: #774C3E;
-    color: #FFF;
-
+.container {
     text-align: center;
     padding: 200px 0;
     width: 100%;
@@ -19,33 +16,62 @@ main {
     justify-content: space-around;
 }
 
-.bemVindo p {
+#bemVindo {
+    color: #FFF;
+
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+#bemVindo img {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    z-index: 0;
+
+    filter: brightness(25%) contrast(65%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(60%);
+
+    transition: transform 1s ease;
+}
+
+#bemVindo img:hover {
+    transform: scale(1.05);
+}
+
+#bemVindo * {
+    position: relative;
+    z-index: 1;
+}
+
+#bemVindo p {
     font-size: 22px;
+    font-weight: 300;
+}
+
+#bemVindo h1 {
+    font-size: 30px;
     font-weight: 400;
 }
 
-.bemVindo h1 {
-    font-size: 40px;
-    font-weight: 600;
-}
-
 .section-pets {
-    border: green solid 2px;
-
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 
-    width: 60%;
+    width: fit-content;
 
     margin: 100px 0 40px 0;
     gap: 100px;
 }
 
 .filtros {
-    border: red solid 1px;
-
-    width: max-content;
+    width: 175px;
     gap: 20px;
 
     display: flex;
@@ -53,90 +79,153 @@ main {
     text-align:justify;
 }
 
-.filtros h3 {
-    font-size: 16px;
-    font-weight: 600;
-    padding-bottom: 6px;
+.filtros hr {
+    width: 125px;
+    margin-left: 5px;
+    border: none;
+    border-top: #774C3E solid 1px;
 }
 
-.filtros ul {
-    border: blue solid 1px;
-    
+.filtros div {    
     list-style: none;
     gap:8px;
     display: flex;
     flex-direction: column;
 }
 
-.filtros ul li {
-    font-size: 14px;
-    font-weight: 400;
+.filtros div h3 {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 6px;
 }
 
-.filtros ul li, .filtros ul li input, .filtros ul li label {
-    cursor: pointer;
-}
-
-.filtros ul li input {
-    border: #774C3E solid 2px;
-}
-
-/* DIV DOS CARDS DE PETS */
-.div-pets {
-    border: red solid 1px;
-
+.filtros div div {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    text-align: justify;
+}
 
-    width: max-content;
+.btn-filtro {
+    font-size: 13px;
+    font-weight: 400;
 
+    background-color: #fff;
+    border: #774C3E solid 1px;
+    border-radius: 2px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.btn-filtro:hover {
+    background-color: #774C3E;
+    color: #fff;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.filtro-ativo {
+    background-color: #774C3E;
+    color: #fff;
+}
+
+/* DIV DOS CARDS DE PETS */
+.catalogo-pets {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    width: 50%;
+    min-width: 800px;
     gap: 15px;
 }
 
 /* CARD INDIVIDUAL DO PET */
-.pet-card {
-    border: blue solid 1px;
-    
+.pet-card {  
     text-align: center;
     cursor: pointer;
-
-    display: flex;
-    flex-direction: column;
-    flex: 1 1 200px;
+    
     gap: 10px;
 
     height: fit-content;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
 }
 
-.pet-card img {
+.img-box {
     width: 100%;
-    bottom: 10px;
-    
-    display: block;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
 
-    border-radius: 4px;
+    border-radius: 3px;
+    margin-bottom: 10px;
 }
 
-.pet-card img:hover {
+.img-box img {
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-box img:hover {
     transition: 0.2s;
     filter: brightness(1.1);
 }
 
-/* .pet-card:hover {
-    transition: 0.3s;
-    transform: scale(0.96);
-} */
+.pet-card .pet-about h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.pet-card .pet-about p {
+    font-size: 16px;
+    font-weight: 300;
+}
 
 .pets-line {
     border: none;
-    border-top: #010101 solid 1px;
+    border-top: #774C3E solid 1px;
 
     display: flex;
     flex-direction: column;
     
     width: 55%;
     margin: 40px auto 40px auto;
+}
+
+#doacao {
+    color: #FFF;
+
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+#doacao img {
+    position: absolute;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    z-index: 0;
+
+    filter: brightness(20%) contrast(60%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(55%);
+
+    transition: transform 1s ease;
+}
+
+#doacao img:hover {
+    transform: scale(1.03);
+}
+
+#doacao * {
+    position: relative;
+    z-index: 1;
+}
+
+#doacao h1 {
+    font-weight: 400;
+    font-size: 30px;
 }

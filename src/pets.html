@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conheça os Pets</title>
+    <link rel="icon" href="./assets/images/logo clara projeto recomecos.svg">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="index.html">
+            <h2>Projeto Recomeços</h2>
+        </a>
+        <nav class="toolbar-actions">
+            <ul>
+                <a href="pets.html">
+                    <li>Conheça os Pets</li>
+                </a>
+
+                <a href="quemSomos.html">
+                    <li>Quem somos</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container" id="bemVindo">
+            <img src="./assets/images/canil projeto recomecos.jpg" alt="canil projeto recomecos">
+            <p>Seja bem-vindo a nossa</p>
+            <h1>Página de Adoção!</h1>
+        </div>
+
+        <section class="section-pets">
+            <section class="filtros" id="filtros">
+                <div class="filtro">
+                    <h3>Raça</h3>
+                    <div>
+                        <button class="btn-filtro" data-raca="Canino">Canino</button>
+                        <button class="btn-filtro" data-raca="Felino">Felino</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="filtro">
+                    <h3>Sexo</h3>
+                    <div>
+                        <button class="btn-filtro" data-sexo="Fêmea">Fêmea</button>
+                        <button class="btn-filtro" data-sexo="Macho">Macho</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="filtro">
+                    <h3>Porte</h3>
+                    <div>
+                        <button class="btn-filtro" data-porte="Grande" alt="mais de 25kg">Grande</button>
+                        <button class="btn-filtro" data-porte="Médio" alt="até de 25kg">Médio</button>
+                        <button class="btn-filtro" data-porte="Pequeno" alt="até de 10kg">Pequeno</button>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="filtro">
+                    <h3>Idade</h3>
+                    <div>
+                        <button class="btn-filtro" data-idade="Idoso" alt="mais de 10 anos">Idoso</button>
+                        <button class="btn-filtro" data-idade="Adulto" alt="até 10 anos">Adulto</button>
+                        <button class="btn-filtro" data-idade="Jovem" alt="até 5 anos">Jovem</button>
+                        <button class="btn-filtro" data-idade="Filhote" alt="menos de 5 anos">Filhote</button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="catalogo-pets" id="catalogo-pets">
+            </section>
+        </section>
+
+        <hr class="pets-line">
+
+        <div class="container" id="doacao">
+            <img src="./assets/images/gatinhos fundo.jpg" alt="foto dos gatinhos">
+            <h1>Faça uma doação!</h1>
+        </div>
+    </main>
+
+    <script type="module" src="./JavaScript/pets.js"></script>
+
+    <footer>
+        <section class="footer-info">
+            <div class="footer-social">
+                <h2>Projeto Recomeços</h2>
+                <a href="https://www.facebook.com" target="_blank">
+                    <img src="./assets/images/icon facebook.svg" alt="ícone do facebook.">
+                </a>
+                <a href="https://www.instagram.com/projetorecomecos" target="_blank">
+                    <img src="./assets/images/icon instagram.svg" alt="ícone do instagram.">
+                </a>
+            </div>
+
+            <div class="footer-menu">
+                <div>
+                    <h2>Menu</h2>
+                </div>
+
+                <div>
+                    <ul>
+                        <a href="pets.php">
+                            <li>Conheça os Pets</li>
+                        </a>
+                        <a href="quemSomos.php">
+                            <li>Quem somos</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr class="footer-line">
+
+        <section class="footer-copy">
+            <p>&copy; 2024 Projeto Recomeços | Desenvolvido por Pet Lovers</p>
+        </section>
+    </footer>
+</body>
+
+</html>

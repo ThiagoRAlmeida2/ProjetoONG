@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Admin</title>
+        <link rel="icon" href="./assets/images/logo clara projeto recomecos.svg">
+
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/admin.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/resets.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">    
+    </head>
+
+    <body>
+        <header>
+            <a href="index.html">
+                <h2>Projeto Recomeços</h2>
+            </a>
+            <nav class="toolbar-actions">
+                <ul>
+                    <a href="pets.html">
+                        <li>Conheça os Pets</li>
+                    </a>
+                    <a href="quemSomos.html">
+                        <li>Quem somos</li>
+                    </a>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <form id="petForm" class="petForm">
+                <h2>Cadastro de Pets</h2>
+
+                <input type="hidden" id="petId">
+
+                <div class="pet-dados">
+                    <input placeholder="Nome" type="text" id="petNome" required>
+
+                    <select id="petSexo" required>
+                        <option value="">Sexo</option>
+                        <option value="Macho">Macho</option>
+                        <option value="Fêmea">Fêmea</option>
+                    </select>
+
+                    <input placeholder="Idade" type="number" id="petIdade" required>
+
+                    <select aria-placeholder="Raça" id="petRaca" required>
+                        <option value="">Raça</option>
+                        <option value="Canino">Canino</option>
+                        <option value="Felino">Felino</option>
+                    </select>
+
+                    <select aria-placeholder="Porte" id="petPorte" required>
+                        <option value="">Porte</option>
+                        <option value="pequeno">Pequeno</option>
+                        <option value="médio">Médio</option>
+                        <option value="grande">Grande</option>
+                    </select>
+                </div>    
+
+                    <hr>
+
+                <div>
+                    <div>
+                        <label>Castrado?</label>
+                        <select aria-placeholder="Castrado" id="Castrado" required>
+                            <option value="">Selecionar</option>
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>                        
+                    </div>
+
+                    <div>
+                        <label>Vacinado?</label>
+                        <select aria-placeholder="Vacinado" id="Vacinado" required>
+                            <option value="">Selecionar</option>
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>                        
+                    </div>
+
+                    <div>
+                        <label>Vermifugado?</label>
+                        <select aria-placeholder="Vermifugado" id="Vermifugado" required>
+                            <option value="">Selecionar</option>
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>                        
+                    </div>
+
+                    <div>
+                        <label>Desparasitado?</label>
+                        <select aria-placeholder="Desparasitado" id="Desparasitado" required>
+                            <option value="">Selecionar</option>
+                            <option value="Sim">Sim</option>
+                            <option value="Não">Não</option>
+                        </select>                        
+                    </div>
+                </div>
+
+                <img id="petImgPreview" src="" alt="Imagem do Pet" style="display: none;">
+
+                <input type="file" id="petFoto" accept="image/*">
+
+                <button type="submit">Adicionar</button>
+            </form>
+
+            <section class="section-tabelaPets">
+                <section id="tabelaPets" class="tabelaPets">
+                </section>
+            </section>
+        </main>
+
+        <script type="module" src="./JavaScript/admin.js"></script>
+
+        <footer>
+            <section class="footer-info">
+                <div class="footer-social">
+                    <h2>Projeto Recomeços</h2>
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="./assets/images/icon facebook.svg" alt="ícone do facebook.">
+                    </a>
+                    <a href="https://www.instagram.com/projetorecomecos" target="_blank">
+                        <img src="./assets/images/icon instagram.svg" alt="ícone do instagram.">
+                    </a>
+                </div>
+                <div class="footer-menu">
+                    <div>
+                        <h2>Menu</h2>
+                    </div>
+                    <div>
+                        <ul>
+                            <a href="pets.html">
+                                <li>Conheça os Pets</li>
+                            </a>
+                            <a href="quemSomos.html">
+                                <li>Quem somos</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="footer-line">
+
+            <section class="footer-copy">
+                <p>&copy; 2024 Projeto Recomeços | Desenvolvido por Pet Lovers</p>
+            </section>
+        </footer>
+    </body>
+</html>
