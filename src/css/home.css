@@ -1,3 +1,6 @@
+.nosso-abrigo{
+    text-align: center;
+}
 
 .image-container {
     position: relative;
@@ -17,11 +20,6 @@ img {
     transform: translate(-50%, -50%);
     border: none;
     /* Outros estilos para personalizar o botão */
-}
-
-#container {
-    width: 80%;
-    margin: 0 auto;
 }
 
 .button {
@@ -44,6 +42,10 @@ img {
     justify-content: space-between;
     border: 2px solid #ffb400;
   }
+
+.image-container img {
+    width: 500px;
+}
   
 .texto-esquerda {
     width: 30%;
