@@ -7,6 +7,7 @@ main {
 }
 
 .container {
+    cursor: pointer;
     text-align: center;
     padding: 200px 0;
     width: 100%;
@@ -16,11 +17,12 @@ main {
     justify-content: space-around;
 }
 
-#bemVindo {
+.bemVindo {
     color: #FFF;
 
     overflow: hidden;
     width: 100%;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -28,35 +30,44 @@ main {
     position: relative;
 }
 
-#bemVindo img {
+.bemVindo img {
     position: absolute;
     object-fit: cover;
-    object-position: center;
+    object-position: 0 50px; 
     width: 100%;
     z-index: 0;
 
     filter: brightness(25%) contrast(65%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(60%);
 
-    transition: transform 1s ease;
+    transition: transform 1s ease, filter 1s ease;
 }
 
-#bemVindo img:hover {
+.bemVindo img:hover {
     transform: scale(1.05);
+    filter: brightness(35%) contrast(65%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(60%);
 }
 
-#bemVindo * {
+.bemVindo * {
     position: relative;
     z-index: 1;
 }
 
-#bemVindo p {
-    font-size: 22px;
-    font-weight: 300;
+.bemVindo p {
+    color: #faf3e0;
+    text-shadow: #101010 2px 2px;
+    mix-blend-mode:luminosity;
+    font-size: 28px;
+    font-weight: 400;
 }
 
-#bemVindo h1 {
-    font-size: 30px;
-    font-weight: 400;
+.bemVindo h1 {
+    color: #faf3e0;
+    text-shadow: #101010 4px 4px;
+    mix-blend-mode:luminosity;
+    font-weight: 500;
+    font-size: 44px;
+    font-weight: 500;
+    font-size: 44px;
 }
 
 .section-pets {
@@ -66,7 +77,8 @@ main {
 
     width: fit-content;
 
-    margin: 100px 0 40px 0;
+    padding: 30px 0 40px 0;
+    margin-top: 70px;
     gap: 100px;
 }
 
@@ -163,11 +175,11 @@ main {
 
     object-fit: cover;
     object-position: center;
+    transition: filter 1s ease;
 }
 
 .img-box img:hover {
-    transition: 0.2s;
-    filter: brightness(1.1);
+    filter:saturate(1.1) brightness(1.15);
 }
 
 .pet-card .pet-about h3 {
@@ -192,7 +204,8 @@ main {
     margin: 40px auto 40px auto;
 }
 
-#doacao {
+.doacao {
+    cursor: pointer;
     color: #FFF;
 
     overflow: hidden;
@@ -204,28 +217,32 @@ main {
     position: relative;
 }
 
-#doacao img {
+.doacao img {
     position: absolute;
     object-fit: cover;
-    object-position: center;
+    object-position: 0 -70px;
     width: 100%;
     z-index: 0;
 
     filter: brightness(20%) contrast(60%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(55%);
 
-    transition: transform 1s ease;
+    transition: transform 1s ease, filter 1s ease;
 }
 
-#doacao img:hover {
+.doacao img:hover {
     transform: scale(1.03);
+    filter: brightness(30%) contrast(65%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(55%);
 }
 
-#doacao * {
+.doacao * {
     position: relative;
     z-index: 1;
 }
 
-#doacao h1 {
-    font-weight: 400;
-    font-size: 30px;
+.doacao h1 {
+    color: #faf3e0;
+    text-shadow: #101010 4px 4px;
+    mix-blend-mode:luminosity;
+    font-weight: 500;
+    font-size: 44px;
 }
