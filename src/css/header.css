@@ -17,8 +17,8 @@ header {
 header h2 {
     color: #7c5143;
     
-    font-weight: 500;
-    font-size: 20px;
+    font-weight: 600;
+    font-size: 22px;
     cursor: pointer;
 
     transition: transform 0.3s ease;
@@ -41,6 +41,7 @@ nav ul {
 nav ul li {
     color: #7c5143;
 
+    font-size: 18px;
     font-weight: 400;
     text-decoration: none;
     cursor: pointer;

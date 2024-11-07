@@ -2,6 +2,19 @@
 import { db } from '../service/firebase.js';
 import { collection, getDocs } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
 
+
+function rolarParaPets() {
+    document.querySelector('#section-pets').scrollIntoView({ behavior: 'smooth' 
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    const linkBemVindo = document.querySelector('.container.bemVindo');
+    if (linkBemVindo) {
+        linkBemVindo.addEventListener('click', rolarParaPets);
+    }
+});
+
     let petsLista = [];
 
     let filtrosAtivos = {
