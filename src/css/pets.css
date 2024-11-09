@@ -156,6 +156,9 @@ main {
 
 /* CARD INDIVIDUAL DO PET */
 .pet-card {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     cursor: pointer;
     
@@ -249,4 +252,29 @@ main {
     mix-blend-mode:luminosity;
     font-weight: 500;
     font-size: 44px;
+}
+
+@media (max-width: 480px) {
+
+    .section-pets {
+        flex-direction: column;
+    }
+
+    .filtros {
+        width: 100%;
+    }
+
+    .catalogo-pets {
+        grid-template-columns: repeat(auto-fill, minmax(2fr, 1fr));
+        min-width: fit-content;
+        gap: 0px;
+    }
+
+    .pet-card {
+        margin-bottom: 18px;
+    }
+
+    .img-box {
+        width: 90%;
+    }
 }
