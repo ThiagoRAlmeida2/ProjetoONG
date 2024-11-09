@@ -2,6 +2,14 @@
 
 Este projeto consiste em um site desenvolvido para uma ONG de adoção de animais, permitindo a visualização dos pets disponíveis e a gestão dos dados por administradores.
 
+## Integrantes do Projeto
+
+- Thiago Ribeiro (Leader / Developer Back-End)
+- Caio Antonio (Developer Front-End)
+- Marcelo Santiago (Developer Front-End)
+- Manuella Melo (designer UI/UX)
+- Clara Costa (Scrum Master)
+
 ## Tecnologias Utilizadas
 
 - **HTML/CSS/JavaScript**: Para estrutura e estilização do site.
@@ -36,14 +44,47 @@ graph TD
     E --> F
 
 ```
+## Instalação
 
-## instalação
+1. Clone o repositório ou abra-o em uma pasta zipada.
 
-1. clone o repositorio ou abra usando uma pasta zip
-2. instale dependencias usando.
+   ```bash
+   git clone https://github.com/your-username/ProjetoONG.git
+   ```
 
-    ```bash
-    npm install
-    ```
+2. Instale as dependências:
+
+   ```bash
+   npm install
+   ```
+   
+## Contribuição
+
+1. Caso queira fazer alguma alteração, faça um fork do repositório original e clone o repositório forkado para o seu ambiente local:
+
+   ```bash
+   git clone https://github.com/your-username/ProjetoONG.git
+   ```
+
+2. Crie uma nova branch para a sua contribuição:
+
+   ```bash
+   git checkout -b nome-da-branch
+   ```
+
+3. Faça as alterações necessárias e commite suas alterações:
+
+   ```bash
+   git add .
+   git commit -m "Adiciona descrição da alteração"
+   ```
+
+4. Envie suas alterações para o seu repositório remoto:
+
+   ```bash
+   git push origin nome-da-branch
+   ```
+
+[Link para o repositório original](https://github.com/ThiagoRAlmeida2/ProjetoONG)
 
 Configure o Firebase e as credenciais de admin conforme necessário no arquivo de configuração.
