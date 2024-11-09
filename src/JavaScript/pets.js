@@ -19,9 +19,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     let filtrosAtivos = {
         raca: [],
-        porte: [],
-        idade: [],
         sexo: [],
+        porte: [],
+        idade: []        
     };
 
 async function carregarDadosPets() {
@@ -41,12 +41,16 @@ function aplicarFiltros() {
     const petsFiltrados = petsLista.filter(pet => {
         const racaFiltro = !filtrosAtivos.raca.length || 
                             filtrosAtivos.raca.includes(pet.raca);
+        const sexoFiltro = !filtrosAtivos.sexo.length || 
+                            filtrosAtivos.sexo.includes(pet.sexo);  
         const porteFiltro = !filtrosAtivos.porte.length || 
                             filtrosAtivos.porte.includes(pet.porte);
         const idadeFiltro = !filtrosAtivos.idade.length || 
-                            filtrosAtivos.idade.includes(pet.idade);
-        const sexoFiltro = !filtrosAtivos.sexo.length || 
-                            filtrosAtivos.sexo.includes(pet.sexo);        
+                            filtrosAtivos.idade.includes(
+                                pet.idade <= 1 ? 'Filhote' :
+                                pet.idade <= 5 ? 'Jovem' :
+                                pet.idade <= 10 ? 'Adulto' : 'Idoso');
+              
 
         return racaFiltro && porteFiltro && idadeFiltro && sexoFiltro;
     });
@@ -96,13 +100,13 @@ function configurarFiltros() {
     botoesFiltro.forEach(botao => {
         botao.addEventListener('click', () => {
             const tipo = botao.dataset.raca || 
+                         botao.dataset.sexo || 
                          botao.dataset.porte || 
-                         botao.dataset.idade || 
-                         botao.dataset.sexo;
+                         botao.dataset.idade;
 
             const categoria = botao.dataset.raca ? 'raca' : 
                               botao.dataset.porte ? 'porte' : 
-                              botao.dataset.idade  ? 'idade' : 'sexo';
+                              botao.dataset.idade ? 'idade' : 'sexo';
 
             botao.classList.toggle('filtro-ativo');
 

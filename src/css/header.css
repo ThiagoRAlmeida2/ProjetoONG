@@ -1,7 +1,6 @@
 
 header {
-    background-color: #fdcb67;
-
+    background-color: #f6c461;
     width: 100%;
     position: relative;
     background-size: cover;
@@ -15,7 +14,7 @@ header {
 }
 
 header h2 {
-    color: #7c5143;
+    color: #774C3E;
     
     font-weight: 600;
     font-size: 22px;
@@ -39,7 +38,7 @@ nav ul {
 }
 
 nav ul li {
-    color: #7c5143;
+    color: #48302E;
 
     font-size: 18px;
     font-weight: 400;
