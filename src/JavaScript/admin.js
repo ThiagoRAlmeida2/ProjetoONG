@@ -111,7 +111,11 @@ async function carregarPets() {
             
                 <div class="pet-about">
                     <p>Sexo: ${pet.sexo}</p>
-                    <p>Idade: ${pet.idade}</p>
+                    <p>Anos: ${pet.idade}</p>
+                    <p>Idade: ${pet.idade <= 1 ? 'Filhote' :
+                                pet.idade <= 5 ? 'Jovem' :
+                                pet.idade <= 10 ? 'Adulto' : 'Idoso'}
+                    </p>
                     <p>Raça: ${pet.raca}</p>
                     <p>Porte: ${pet.porte}</p>
 

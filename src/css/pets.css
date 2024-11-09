@@ -7,6 +7,8 @@ main {
 }
 
 .container {
+    background-color: #774C3E;
+
     cursor: pointer;
     text-align: center;
     padding: 200px 0;
@@ -37,14 +39,14 @@ main {
     width: 100%;
     z-index: 0;
 
-    filter: brightness(25%) contrast(65%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(60%);
+    filter: brightness(30%) contrast(65%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(60%);
 
     transition: transform 1s ease, filter 1s ease;
 }
 
 .bemVindo img:hover {
     transform: scale(1.05);
-    filter: brightness(35%) contrast(65%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(60%);
+    filter: brightness(35%) contrast(70%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(60%);
 }
 
 .bemVindo * {
@@ -58,6 +60,7 @@ main {
     mix-blend-mode:luminosity;
     font-size: 28px;
     font-weight: 400;
+    pointer-events: none;
 }
 
 .bemVindo h1 {
@@ -68,6 +71,7 @@ main {
     font-size: 44px;
     font-weight: 500;
     font-size: 44px;
+    pointer-events: none;
 }
 
 .section-pets {
@@ -224,14 +228,14 @@ main {
     width: 100%;
     z-index: 0;
 
-    filter: brightness(20%) contrast(60%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(55%);
+    filter: brightness(30%) contrast(65%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(55%);
 
     transition: transform 1s ease, filter 1s ease;
 }
 
 .doacao img:hover {
     transform: scale(1.03);
-    filter: brightness(30%) contrast(65%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(55%);
+    filter: brightness(35%) contrast(70%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(55%);
 }
 
 .doacao * {
