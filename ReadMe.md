@@ -27,7 +27,7 @@ Este projeto consiste em um site desenvolvido para uma ONG de adoção de animai
 ## Como Usar
 
 1. **Configuração**: Certifique-se de que as dependências listadas no `package.json` estão instaladas.
-2. **Deploy**: O site foi implantado na Vercel, disponível para acesso público no seguinte link: [Acessar o Site da ONG na](https://projeto-recomeco.vercel.app/)
+2. **Deploy**: O site foi implantado na Vercel, disponível para acesso público no seguinte link: [Acessar o Site da ONG](https://projeto-recomeco.vercel.app/)
 3. **Autenticação de Admin**: Acessível apenas com login e senha cadastrados para os administradores gerenciarem o conteúdo de pets.
 
 ## Estrutura de Navegação do Projeto
