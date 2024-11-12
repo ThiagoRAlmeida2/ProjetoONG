@@ -51,3 +51,39 @@ nav ul li {
 nav ul li:hover {
     transform: scale(0.96);
 }
+
+
+@media (max-width: 480px) {
+
+    /* CABEÇALHO */
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 0px;
+        padding-bottom: 0;
+    }
+
+    header h2 {
+        font-size: 20px;
+        padding: 0 0 18px;
+    }
+
+    header nav {
+        background-color: #48302E;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 14px 0;
+        width: 100%;
+    }
+
+    header nav ul {
+        gap: 50px;
+    }
+
+    header nav ul li {
+        color: #fff;
+        font-size: 16px;
+    }
+}
