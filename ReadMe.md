@@ -42,8 +42,8 @@ graph TD
     F[Firebase]
     
     E --> F
-
 ```
+
 ## Instalação
 
 1. Clone o repositório ou abra-o em uma pasta zipada.
@@ -57,7 +57,7 @@ graph TD
    ```bash
    npm install
    ```
-   
+
 ## Contribuição
 
 1. Caso queira fazer alguma alteração, faça um fork do repositório original e clone o repositório forkado para o seu ambiente local:
