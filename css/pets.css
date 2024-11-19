@@ -1,0 +1,372 @@
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #774C3E;
+
+    cursor: pointer;
+    text-align: center;
+    padding: 200px 0;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.bemVindo {
+    color: #FFF;
+
+    overflow: hidden;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.bemVindo img {
+    position: absolute;
+    object-fit: cover;
+    object-position: 0 50px; 
+    width: 100%;
+    z-index: 0;
+
+    filter: brightness(30%) contrast(65%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(60%);
+
+    transition: transform 1s ease, filter 1s ease;
+}
+
+.bemVindo img:hover {
+    transform: scale(1.05);
+    filter: brightness(35%) contrast(70%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(60%);
+}
+
+.bemVindo * {
+    position: relative;
+    z-index: 1;
+}
+
+.bemVindo p {
+    color: #faf3e0;
+    text-shadow: #101010 2px 2px;
+    mix-blend-mode:luminosity;
+    font-size: 28px;
+    font-weight: 400;
+    pointer-events: none;
+}
+
+.bemVindo h1 {
+    color: #faf3e0;
+    text-shadow: #101010 4px 4px;
+    mix-blend-mode:luminosity;
+    font-weight: 500;
+    font-size: 44px;
+    font-weight: 500;
+    font-size: 44px;
+    pointer-events: none;
+}
+
+.section-pets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    width: fit-content;
+
+    padding: 30px 0 40px 0;
+    margin-top: 70px;
+    gap: 100px;
+}
+
+.filtros {
+    width: 175px;
+    gap: 20px;
+
+    display: flex;
+    flex-direction: column;
+    text-align:justify;
+}
+
+.filtros hr {
+    width: 125px;
+    margin-left: 5px;
+    border: none;
+    border-top: #774C3E solid 1px;
+}
+
+.filtros div {    
+    list-style: none;
+    gap:8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.filtros div h3 {
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 6px;
+}
+
+.filtros div div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.btn-filtro {
+    font-size: 13px;
+    font-weight: 400;
+
+    background-color: #fff;
+    border: #774C3E solid 1px;
+    border-radius: 2px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.btn-filtro:hover {
+    background-color: #774C3E;
+    color: #fff;
+    opacity: 0.8;
+    transition: 0.2s;
+}
+
+.filtro-ativo {
+    background-color: #774C3E;
+    color: #fff;
+}
+
+/* DIV DOS CARDS DE PETS */
+.catalogo-pets {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    width: 50%;
+    min-width: 800px;
+    gap: 15px;
+}
+
+/* CARD INDIVIDUAL DO PET */
+.pet-card {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+    
+    gap: 10px;
+
+    height: fit-content;
+    padding-bottom: 15px;
+}
+
+.img-box {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.img-box img {
+    width: 100%;
+
+    object-fit: cover;
+    object-position: center;
+    transition: filter 1s ease;
+}
+
+.img-box img:hover {
+    filter:saturate(1.1) brightness(1.15);
+}
+
+.pet-card .pet-about h3 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.pet-card .pet-about p {
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.pets-line {
+    border: none;
+    border-top: #774C3E solid 1px;
+
+    display: flex;
+    flex-direction: column;
+    
+    width: 55%;
+    margin: 40px auto 40px auto;
+}
+
+.doacao {
+    cursor: pointer;
+    color: #FFF;
+
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    position: relative;
+}
+
+.doacao img {
+    position: absolute;
+    object-fit: cover;
+    object-position: 0 -70px;
+    width: 100%;
+    z-index: 0;
+
+    filter: brightness(30%) contrast(65%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(55%);
+
+    transition: transform 1s ease, filter 1s ease;
+}
+
+.doacao img:hover {
+    transform: scale(1.03);
+    filter: brightness(35%) contrast(70%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(55%);
+}
+
+.doacao * {
+    position: relative;
+    z-index: 1;
+}
+
+.doacao h1 {
+    color: #faf3e0;
+    text-shadow: #101010 4px 4px;
+    mix-blend-mode:luminosity;
+    font-weight: 500;
+    font-size: 44px;
+}
+
+@media (max-width: 480px) {
+
+    .bemVindo {
+        min-height: 250px;
+        padding: 0;
+
+        & img {
+            height: 450px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        & p {
+            font-size: 1.1rem;
+        }
+
+        & h1 {
+            font-size: 1.8rem;
+            font-weight: 500;
+        }
+    }
+
+    .section-pets {
+        flex-direction: column;
+        padding: 0;
+        margin: 20px 0;
+        gap: 30px;
+    }
+
+    .filtros {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0;    
+        margin: 0;
+        gap: 14px;
+
+        & .filtro {
+            width: min-content;
+            display: flex;
+            flex-direction: column;   
+            align-items: center;  
+            gap: 6px; 
+        }
+
+        & .filtro h3 {
+            border-bottom: #774C3E solid 1px;
+            color: #774C3E;
+            width: 100%;
+            text-align: center;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            padding: 0 0 6px;
+            margin-bottom: 2px;
+        }
+
+        & .btn-filtro {
+            width: 100%;
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        & .filtro:last-child {
+            width: 130px;
+            flex-wrap: wrap;
+            display: flex;
+
+        }
+
+        & .filtro:last-child button {
+            width: 46%;
+            font-size: 0.8rem;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        & hr {
+            display: none;
+        }
+    }
+
+    .catalogo-pets {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        min-width: fit-content;
+        gap: 0px;
+
+        & .pet-card {
+            padding: 0;
+            margin-bottom: 18px;
+            gap: 2px;
+        }
+    
+        & .img-box {
+            width: 85%;
+        }
+
+        & .pet-about h3 {
+            font-size: 1.15rem;
+            font-weight: 400;
+            margin-bottom: 2px;
+        }
+
+        & .pet-about p {
+            font-size: 0.9rem;
+        }
+    
+        & .pets-line {
+            width: 65%;
+            padding: 0;
+            margin: 10px 0 30px;
+        }
+    }
+
+    
+}
