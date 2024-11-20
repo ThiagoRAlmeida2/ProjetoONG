@@ -294,14 +294,14 @@
 
     .section-img a {
         min-height: fit-content;
-        height: 280px;
+        height: 200px;
     }
     
     #section-img-1 {
-        object-position: 0 -80px;
+        object-position: 0 -130px;
     }
 
     #section-img-2 {
-        object-position: 0 -50px;
+        object-position: 0 -90px;
     }
 }

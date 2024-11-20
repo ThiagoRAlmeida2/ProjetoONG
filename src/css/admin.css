@@ -190,3 +190,35 @@ main {
     background-color: #7c5143;
     color: #fff;
 }
+
+@media (max-width: 480px) {
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .petForm {
+        width: 75%;
+
+        & .pet-dados input, 
+        & .pet-dados select {
+            width: 48%;
+        }
+
+        & div div {
+            width: 48%;
+        }
+ 
+        & div div select {
+            width: 100%;
+        }
+    }
+
+    .section-tabelaPets {
+        max-width: 75%;
+
+        & .tabelaPets {
+            width: 100%;
+        }
+    }
+}
