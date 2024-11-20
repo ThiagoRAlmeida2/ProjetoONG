@@ -5,9 +5,6 @@ package-lock.json
 PHPhost.md
 paletaDeCores.md
 src/service/firebase.js
-src/JavaScript/auth.js
-src/JavaScript/admin.js
-
 
 # Default ignored files
 /shelf/
