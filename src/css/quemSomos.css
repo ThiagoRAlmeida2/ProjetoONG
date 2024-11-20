@@ -127,3 +127,52 @@ main {
     filter: brightness(32%) contrast(72%) sepia(1) saturate(4) hue-rotate(325deg) grayscale(55%);
 }
 
+@media (max-width: 480px) {
+
+    .members-section {
+        margin-bottom: 20px;
+    }
+
+    .quem-somos-titulo {
+        font-size: 2.25rem;
+    }
+
+    .members-div {
+        align-items: first baseline;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 14px 0;
+    }
+
+    .section-line {
+        width: 70%;
+    }
+
+    .member-card {
+        margin: 0 0 8px;
+
+        & h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        & p {
+            font-size: 1.25rem;
+            margin-top: 0;
+        }
+    }
+
+    .member-card .img-member {
+        width: 140px;
+        height: 140px;
+    }
+
+    .conheca-os-pets {
+        height: 200px;
+        margin-top: 0;
+
+        & h3 {
+            font-size: 2.4rem;
+        }
+    }
+}

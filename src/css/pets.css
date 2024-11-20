@@ -256,25 +256,114 @@ main {
 
 @media (max-width: 480px) {
 
+    .bemVindo {
+        min-height: 200px;
+        padding: 0;
+
+        & img {
+            height: 450px;
+            object-fit: cover;
+            object-position: center;
+        }
+
+        & p {
+            font-size: 1.6rem;
+        }
+        
+        & h1 {
+            font-size: 2.4rem;
+            font-weight: 500;
+        }
+    }
+
     .section-pets {
         flex-direction: column;
+        padding: 0;
+        margin: 20px 0 0;
+        gap: 30px;
     }
 
     .filtros {
         width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        padding: 0 0 18px;    
+        margin: 0;
+        gap: 14px;
+        border-bottom: #774C3E solid 1px;
+
+        & .filtro {
+            width: min-content;
+            display: flex;
+            flex-direction: column;   
+            align-items: center;  
+            gap: 6px; 
+        }
+
+        & .filtro h3 {
+            border-bottom: #774C3E solid 1px;
+            color: #774C3E;
+            width: 100%;
+            text-align: center;
+            font-size: 1.3rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+            padding: 0 0 6px;
+            margin-bottom: 2px;
+        }
+
+        & .btn-filtro {
+            width: 100%;
+            font-size: 1rem;
+            letter-spacing: 1px;
+        }
+
+        & .filtro:last-child {
+            width: 130px;
+            flex-wrap: wrap;
+            display: flex;
+        }
+
+        & .filtro:last-child button {
+            width: 46%;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        & hr {
+            display: none;
+        }
     }
 
     .catalogo-pets {
-        grid-template-columns: repeat(auto-fill, minmax(2fr, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
         min-width: fit-content;
         gap: 0px;
+
+        & .pet-card {
+            padding: 0;
+            margin-bottom: 18px;
+            gap: 2px;
+        }
+    
+        & .img-box {
+            width: 85%;
+        }
+
+        & .pet-about h3 {
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-bottom: 2px;
+        }
+
+        & .pet-about p {
+            font-size: 1.2rem;
+        }
     }
 
-    .pet-card {
-        margin-bottom: 18px;
-    }
-
-    .img-box {
-        width: 90%;
+    .pets-line {
+        width: 65%;
+        padding: 0;
+        margin: 20px 0 50px;
     }
 }
