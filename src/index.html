@@ -72,11 +72,6 @@
                     </a>
                 </div>
             </section>
-
-            <!-- <div class="container-div div-column">
-                <h3 class="tittle-2 color-2">Case de Sucesso</h3>
-                <p class="text-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>  -->
         </main>
 
         <footer>
@@ -111,5 +106,17 @@
                 <p>&copy; 2024 Projeto Recomeços | Desenvolvido por Pet Lovers</p>
             </section>
         </footer>
+        <!-- Importação do firebase  analytics-->
+        <script type="module">
+            import { analytics } from './services/firebase.js';
+            import { logEvent } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+        
+            // Rastrear a visualização de página automaticamente
+            logEvent(analytics, 'page_view', {
+                page_title: document.title,
+                page_path: window.location.pathname,
+                page_location: window.location.href,
+            });
+        </script>
     </body>
 </html>
