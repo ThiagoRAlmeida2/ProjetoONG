@@ -1,8 +1,7 @@
-// services/firebase.js
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-app.js";
 import { getFirestore } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
 import { getStorage } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js"; // Importando o Analytics
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js"; 
 
 const firebaseConfig = {
     apiKey: "AIzaSyAZFfWi-01PgAZuNj5KOZTMOo2mTO6ot9s",
