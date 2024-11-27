@@ -2,6 +2,15 @@ import { db } from '../service/firebase.js';
 import { getStorage, ref, uploadBytes, getDownloadURL } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-storage.js";
 import { collection, addDoc, updateDoc, getDocs, doc, deleteDoc, getDoc } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore.js";
 
+import { analytics } from '../service/firebase.js';
+import { logEvent } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-analytics.js";
+
+logEvent(analytics, 'page_view', {
+    page_title: document.title,
+    page_path: window.location.pathname,
+    page_location: window.location.href,
+});
+
 const storage = getStorage();
 const petForm = document.getElementById("petForm");
 
