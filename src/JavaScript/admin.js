@@ -31,6 +31,7 @@ petForm.addEventListener("submit", async function (e) {
         const nome = document.getElementById("petNome").value;
         const sexo = document.getElementById("petSexo").value;
         const idade = document.getElementById("petIdade").value;
+        const unidade = document.getElementById("petUnidade").value;
         const raca = document.getElementById("petRaca").value;
         const porte = document.getElementById("petPorte").value;
 
@@ -66,6 +67,7 @@ petForm.addEventListener("submit", async function (e) {
             nome,
             sexo,
             idade,
+            unidade,
             raca,
             porte,
 
@@ -102,7 +104,7 @@ async function carregarPets() {
         catalogoPets.innerHTML = "";
 
         mostrarpets.forEach((pets) => {
-            const pet = pets.data();            
+            const pet = pets.data();         
             const petCard = document.createElement('div');
             petCard.classList.add('pet-card');
 
@@ -119,12 +121,8 @@ async function carregarPets() {
                 <h3>${pet.nome}</h3>
             
                 <div class="pet-about">
-                    <p>Sexo: ${pet.sexo}</p>
-                    <p>Anos: ${pet.idade}</p>
-                    <p>Idade: ${pet.idade <= 1 ? 'Filhote' :
-                                pet.idade <= 5 ? 'Jovem' :
-                                pet.idade <= 10 ? 'Adulto' : 'Idoso'}
-                    </p>
+                <p>Sexo: ${pet.sexo}</p>
+                <p>Idade: ${pet.idade} ${pet.unidade || ''}</p>
                     <p>Raça: ${pet.raca}</p>
                     <p>Porte: ${pet.porte}</p>
 
@@ -155,6 +153,7 @@ window.editarPet = function (id, nome, sexo, idade, raca, porte, img, castrado, 
     document.getElementById("petNome").value = nome;
     document.getElementById("petSexo").value = sexo;
     document.getElementById("petIdade").value = idade;
+    document.getElementById("petUnidade").value = unidade;
     document.getElementById("petRaca").value = raca;
     document.getElementById("petPorte").value = porte;
 
